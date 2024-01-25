@@ -6,7 +6,7 @@
   <link href="http://pikalock.github.io/atom.xml" rel="self"/>
   
   <link href="http://pikalock.github.io/"/>
-  <updated>2024-01-25T07:17:11.170Z</updated>
+  <updated>2024-01-25T07:19:12.297Z</updated>
   <id>http://pikalock.github.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://pikalock.github.io/post/test/"/>
+    <id>http://pikalock.github.io/post/test/</id>
+    <published>2024-01-25T07:19:12.000Z</published>
+    <updated>2024-01-25T07:19:12.297Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>LOST_DAY_1</title>
