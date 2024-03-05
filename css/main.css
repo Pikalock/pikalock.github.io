@@ -1813,7 +1813,7 @@ pre code {
 }
 @media (max-width: 991px) {
   .post-body {
-    text-align: match-parent;
+    text-align: justify;
   }
 }
 .post-body h1 .header-anchor,
@@ -2708,7 +2708,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #85ffe3;
+  background: #7a8edb;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
