@@ -1937,13 +1937,13 @@ body {
   opacity: 0.8;
 }
 .header-inner {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.8);
 }
 .popup {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .main-inner {
-  opacity: 0.82;
+  opacity: 0.77;
 }
 .posts-collapse .post-content {
   margin-bottom: 35px;
