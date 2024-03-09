@@ -1937,13 +1937,13 @@ body {
   opacity: 0.8;
 }
 .header-inner {
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.75);
 }
 .popup {
-  opacity: 0.7;
+  opacity: 0.73;
 }
 .main-inner {
-  opacity: 0.85;
+  opacity: 0.82;
 }
 .posts-collapse .post-content {
   margin-bottom: 35px;
@@ -3143,7 +3143,7 @@ header.header {
   }
 }
 body {
-  background: url("/images/4.png");
+  background: url("/images/6.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
