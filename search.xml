@@ -176,6 +176,138 @@
       </tags>
   </entry>
   <entry>
+    <title>从现在开始记录的一些集合</title>
+    <url>/post/%E4%BB%8E%E7%8E%B0%E5%9C%A8%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BD%95%E7%9A%84%E4%B8%80%E4%BA%9B%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>星星再也不会亮<br>天空也慢慢起了雾<br>太阳来的有点慢<br>月亮好像都迷了路</p>
+<span id="more"></span>
+
+<blockquote>
+<p>那个人看起来比爸爸有钱欸，那个人看起来比妈妈温柔，她看起来比小葵乖，它看起来比小白聪明，只有那个小孩，看起来比我差一点的。————蜡笔小新</p>
+</blockquote>
+<blockquote>
+<p>梵高是个孤独而狂野的散步者，而波德莱尔则是个孤独而忧郁的散步者，一个游荡在大自然中，一个徘徊在巴黎的街巷。殊途同归，两个人的个性都爆发出超常的能量，在各自的领域创造了奇迹。这样的个性不可复制，因果关系错综发杂，几乎是无穷无尽的大小力量全方位起作用的结果。</p>
+</blockquote>
+<blockquote>
+<p>查阅原书后，证实了那个迟到的回忆是确切的。————豪尔赫</p>
+</blockquote>
+<blockquote>
+<p>可我会像奥德修斯一样<br>朝着心中的方向<br>哪怕众神会在彼岸阻挡<br>当我需要独自站在<br>远方的沙场</p>
+</blockquote>
+<blockquote>
+<p>巍峨殿阙  孤烛流离<br>花开一季  碾作尘泥<br>到未路扶择瞬息<br>苦乐悲喜得失中尽致淋漓</p>
+</blockquote>
+<blockquote>
+<p>4:30，我躺在床上，<br>从前，为了看清一个人，我拒绝了所有人。<br>现在，为了看清未来，我亲手埋葬了所有过去。</p>
+<p>童话转瞬即空。可是，我依旧能闻到歌里的味道，是那个夏天传出来的。死寂的无人之地，暴风雨还是来了，确也只淋到了我一个人身上。还在等待彩虹。</p>
+</blockquote>
+<blockquote>
+<p>且趁余花谋一笑。</p>
+<p>葬花醉枕，山峋误春。</p>
+</blockquote>
+<blockquote>
+<p>你的未来一直被重复演绎着，你即不朽。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>摘录</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客优化集合(未完)</title>
+    <url>/post/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li><p><input checked disabled type="checkbox"> 
+增添搜索功能（3.5</p>
+<ul>
+<li><p>在站点根目录下执行命令：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑站点配置文件，新增以下内容到任意位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
+<span id="more"></span></li>
+</ul>
+</li>
+</ul>
+<p>for test:[bookmarks]<br>basic footnote<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="basic footnote content">[1]</span></a></sup></p>
+<ul>
+<li><p>编辑主题配置文件，启用本地搜索功能：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">   <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">basic footnote content<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>但丁九篇（未完）</title>
+    <url>/post/%E4%BD%86%E4%B8%81%E4%B9%9D%E7%AF%87/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Reading process:   <progress value="1" max="9"><br></progress><br></p>
+<p>Note process:   <progress value="1" max="9"><br></progress></p>
+<div class="note default"><p>序言</p>
+</div>
+
+<blockquote class="blockquote-center">
+<p>那种机械的、粗糙的文字破坏了语言的严谨性，似乎基于观察不足而造成的冷漠。但丁不允许自己犯那种失误；他的书里没有一个说不出道理的词。</p>
+
+</blockquote><span id="more"></span>
+
+<p>我摘下的每一段，大抵都是能让我有想象的延伸的，正如Borges在<a href="https://pikalock.github.io/post/%E8%AF%BBBorges-Oral%E7%9A%84%E6%80%9D%E8%80%83/">《口述-书籍》</a>中讲道，<em>“书籍是记忆和想象的延伸。”</em></p>
+<p>看这本书之前，我先是看了波德莱尔诗选和消失的地平线，但是马上就合上了，他的诗歌和我们亲爱的Borges有着类似的意象，但是读起来不太和谐，我读不到藏着的暗线（也许是翻译的缘故）。同样，他在口述中写道：<em>“如果我们读到一些晦涩难懂的东西，那是作者的失败。因此，我认为，像乔伊斯那样的作家基本上是失败的，因为他的作品读起来太吃力。书不应该读起来费劲，快乐的事不应该做起来费劲。”</em></p>
+<p>但是当我拿起这本书，字就开始变得生动，这就是博尔赫斯的魅力所在。他能轻而易举地把繁琐交织的路线和中心表达清楚，藏于刀锋而不露，是艺术，也是思维盛宴。他的语言则是钩住你的另一大钥匙。以至于对有关‘但丁’那样陌生遥远的想象我也会读，读路易斯，总有无法预知的收获。</p>
+<blockquote class="blockquote-center">
+<p>诗人是人们臆造的世界中的每一个人，每一个瞬息，每一个细节。他的并非最难的任务之一是隐藏或者掩盖那种无所不在性。</p>
+
+</blockquote>
+
+<blockquote class="blockquote-center">
+<p>我认为一切文学以及书籍的顶峰就是《神曲》，从来没有哪本书曾给过我如此强烈的美学震撼。我是个享乐派读者，我是在书中寻找震撼的。</p>
+
+</blockquote>
+
+<blockquote class="blockquote-center">
+<p>我知道，这本书将远远超过我的不眠之夜，也超出我们大家的不眠之夜。</p>
+
+</blockquote>
+
+<br>
+
+<div class="note warning"><p>第四歌里高贵的城堡</p>
+</div>
+
+<blockquote class="blockquote-center">
+<p>四周一片岑寂，</p>
+<p>只有一缕清风飘忽不定，</p>
+<p>来也无名，去也无形。——《神曲·IV》</p>
+
+</blockquote>
+
+<blockquote class="blockquote-center">
+<p>仿佛把我引为同俦，</p>
+<p>仿佛我是他们中间的一个。——《神曲·IV》</p>
+
+</blockquote>
+
+<blockquote class="blockquote-center">
+<p>维吉尔说是出于同情，因为他自己也是被打入地狱的人之一。但丁为了掩饰这句话引起的震惊或者表示怜悯，连连称他为尊敬的老师。<br>叹息，并非折磨引起的痛苦的叹息，在空中回荡。</p>
+
+</blockquote>
+
+<p>不幸的是，看完这一章没什么收获，但我查到了<a href="https://www.sohu.com/a/425689342_752285">一篇不错的解读</a>。</p>
+]]></content>
+      <categories>
+        <category>博尔赫斯</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>the-2th week</title>
     <url>/post/the-2th-week/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note info"><p>the 1th day(3.4)</p>
@@ -279,6 +411,98 @@
       </categories>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本学期书单</title>
+    <url>/post/%E6%9C%AC%E5%AD%A6%E6%9C%9F%E4%B9%A6%E5%8D%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>放这学期看的书吧，应该都会写读后感，也作为flag🚩</p>
+<div class="note danger"><p>博尔赫斯 </p>
+</div>
+
+<ul>
+<li><p><input checked disabled type="checkbox"> 
+布罗迪报告</p>
+</li>
+<li><p><input checked disabled type="checkbox"> 
+<a href="https://pikalock.github.io/post/%E8%AF%BBBorges-Oral%E7%9A%84%E6%80%9D%E8%80%83/">Borges,oral</a></p>
+<span id="more"></span>
+</li>
+<li><p><input checked disabled type="checkbox"> 
+<a href="https://pikalock.github.io/post/%E6%81%B6%E6%A3%8D%E5%88%97%E4%BC%A0/">恶棍列传</a></p>
+</li>
+<li><p><input disabled type="checkbox"> 
+沙之书</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+面前的月亮·圣马丁札记</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+文集第一部</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+小径分岔的花园</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+虚构集</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+布宜诺斯艾利斯激情</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+另一个，同一个</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+永恒史</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+<a href="https://pikalock.github.io/post/%E4%BD%86%E4%B8%81%E4%B9%9D%E7%AF%87/">但丁九篇</a></p>
+</li>
+<li><p><input disabled type="checkbox"> 
+博尔赫斯教授的25堂文学课</p>
+</li>
+</ul>
+<br>
+
+<div class="note warning"><p>王小波 </p>
+</div>
+
+<ul>
+<li><input disabled type="checkbox"> 白银时代</li>
+<li><input disabled type="checkbox"> 黄金时代</li>
+<li><input disabled type="checkbox"> 青铜时代</li>
+</ul>
+<br>
+
+<div class="note success"><p>The other </p>
+</div>
+
+<ul>
+<li><p><input checked disabled type="checkbox"> 
+<a href="https://pikalock.github.io/post/%E7%AA%84%E9%97%A8/">窄门</a></p>
+</li>
+<li><p><input disabled type="checkbox"> 
+堂吉诃德</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+在绝望之颠</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+浮生琐记</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+何为幸福</p>
+</li>
+<li><p><input disabled type="checkbox"> 
+南方快车</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>书单</category>
+      </categories>
+      <tags>
+        <tag>索引</tag>
       </tags>
   </entry>
   <entry>
@@ -477,207 +701,6 @@
       </categories>
       <tags>
         <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客优化集合(未完)</title>
-    <url>/post/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li><p><input checked disabled type="checkbox"> 
-增添搜索功能（3.5</p>
-<ul>
-<li><p>在站点根目录下执行命令：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>编辑站点配置文件，新增以下内容到任意位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
-<span id="more"></span></li>
-</ul>
-</li>
-</ul>
-<p>for test:[bookmarks]<br>basic footnote<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="basic footnote content">[1]</span></a></sup></p>
-<ul>
-<li><p>编辑主题配置文件，启用本地搜索功能：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">   <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">basic footnote content<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>但丁九篇（未完）</title>
-    <url>/post/%E4%BD%86%E4%B8%81%E4%B9%9D%E7%AF%87/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Reading process:   <progress value="1" max="9"><br></progress><br></p>
-<p>Note process:   <progress value="1" max="9"><br></progress></p>
-<div class="note default"><p>序言</p>
-</div>
-
-<blockquote class="blockquote-center">
-<p>那种机械的、粗糙的文字破坏了语言的严谨性，似乎基于观察不足而造成的冷漠。但丁不允许自己犯那种失误；他的书里没有一个说不出道理的词。</p>
-
-</blockquote><span id="more"></span>
-
-<p>我摘下的每一段，大抵都是能让我有想象的延伸的，正如Borges在<a href="https://pikalock.github.io/post/%E8%AF%BBBorges-Oral%E7%9A%84%E6%80%9D%E8%80%83/">《口述-书籍》</a>中讲道，<em>“书籍是记忆和想象的延伸。”</em></p>
-<p>看这本书之前，我先是看了波德莱尔诗选和消失的地平线，但是马上就合上了，他的诗歌和我们亲爱的Borges有着类似的意象，但是读起来不太和谐，我读不到藏着的暗线（也许是翻译的缘故）。同样，他在口述中写道：<em>“如果我们读到一些晦涩难懂的东西，那是作者的失败。因此，我认为，像乔伊斯那样的作家基本上是失败的，因为他的作品读起来太吃力。书不应该读起来费劲，快乐的事不应该做起来费劲。”</em></p>
-<p>但是当我拿起这本书，字就开始变得生动，这就是博尔赫斯的魅力所在。他能轻而易举地把繁琐交织的路线和中心表达清楚，藏于刀锋而不露，是艺术，也是思维盛宴。他的语言则是钩住你的另一大钥匙。以至于对有关‘但丁’那样陌生遥远的想象我也会读，读路易斯，总有无法预知的收获。</p>
-<blockquote class="blockquote-center">
-<p>诗人是人们臆造的世界中的每一个人，每一个瞬息，每一个细节。他的并非最难的任务之一是隐藏或者掩盖那种无所不在性。</p>
-
-</blockquote>
-
-<blockquote class="blockquote-center">
-<p>我认为一切文学以及书籍的顶峰就是《神曲》，从来没有哪本书曾给过我如此强烈的美学震撼。我是个享乐派读者，我是在书中寻找震撼的。</p>
-
-</blockquote>
-
-<blockquote class="blockquote-center">
-<p>我知道，这本书将远远超过我的不眠之夜，也超出我们大家的不眠之夜。</p>
-
-</blockquote>
-
-<br>
-
-<div class="note warning"><p>第四歌里高贵的城堡</p>
-</div>
-
-<blockquote class="blockquote-center">
-<p>四周一片岑寂，</p>
-<p>只有一缕清风飘忽不定，</p>
-<p>来也无名，去也无形。——《神曲·IV》</p>
-
-</blockquote>
-
-<blockquote class="blockquote-center">
-<p>仿佛把我引为同俦，</p>
-<p>仿佛我是他们中间的一个。——《神曲·IV》</p>
-
-</blockquote>
-
-<blockquote class="blockquote-center">
-<p>维吉尔说是出于同情，因为他自己也是被打入地狱的人之一。但丁为了掩饰这句话引起的震惊或者表示怜悯，连连称他为尊敬的老师。<br>叹息，并非折磨引起的痛苦的叹息，在空中回荡。</p>
-
-</blockquote>
-
-<p>不幸的是，看完这一章没什么收获，但我查到了<a href="https://www.sohu.com/a/425689342_752285">一篇不错的解读</a>。</p>
-]]></content>
-      <categories>
-        <category>博尔赫斯</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本学期书单</title>
-    <url>/post/%E6%9C%AC%E5%AD%A6%E6%9C%9F%E4%B9%A6%E5%8D%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>放这学期看的书吧，应该都会写读后感，也作为flag🚩</p>
-<div class="note danger"><p>博尔赫斯 </p>
-</div>
-
-<ul>
-<li><p><input checked disabled type="checkbox"> 
-布罗迪报告</p>
-</li>
-<li><p><input checked disabled type="checkbox"> 
-<a href="https://pikalock.github.io/post/%E8%AF%BBBorges-Oral%E7%9A%84%E6%80%9D%E8%80%83/">Borges,oral</a></p>
-<span id="more"></span>
-</li>
-<li><p><input checked disabled type="checkbox"> 
-<a href="https://pikalock.github.io/post/%E6%81%B6%E6%A3%8D%E5%88%97%E4%BC%A0/">恶棍列传</a></p>
-</li>
-<li><p><input disabled type="checkbox"> 
-沙之书</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-面前的月亮·圣马丁札记</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-文集第一部</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-小径分岔的花园</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-虚构集</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-布宜诺斯艾利斯激情</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-另一个，同一个</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-永恒史</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-<a href="https://pikalock.github.io/post/%E4%BD%86%E4%B8%81%E4%B9%9D%E7%AF%87/">但丁九篇</a></p>
-</li>
-<li><p><input disabled type="checkbox"> 
-博尔赫斯教授的25堂文学课</p>
-</li>
-</ul>
-<br>
-
-<div class="note warning"><p>王小波 </p>
-</div>
-
-<ul>
-<li><input disabled type="checkbox"> 白银时代</li>
-<li><input disabled type="checkbox"> 黄金时代</li>
-<li><input disabled type="checkbox"> 青铜时代</li>
-</ul>
-<br>
-
-<div class="note success"><p>The other </p>
-</div>
-
-<ul>
-<li><p><input checked disabled type="checkbox"> 
-<a href="https://pikalock.github.io/post/%E7%AA%84%E9%97%A8/">窄门</a></p>
-</li>
-<li><p><input disabled type="checkbox"> 
-堂吉诃德</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-在绝望之颠</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-浮生琐记</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-何为幸福</p>
-</li>
-<li><p><input disabled type="checkbox"> 
-南方快车</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>书单</category>
-      </categories>
-      <tags>
-        <tag>索引</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从现在开始记录的一些集合</title>
-    <url>/post/%E4%BB%8E%E7%8E%B0%E5%9C%A8%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BD%95%E7%9A%84%E4%B8%80%E4%BA%9B%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>星星再也不会亮<br>天空也慢慢起了雾<br>太阳来的有点慢<br>月亮好像都迷了路</p>
-<span id="more"></span>
-
-<p>那个人看起来比爸爸有钱欸，那个人看起来比妈妈温柔，她看起来比小葵乖，它看起来比小白聪明，只有那个小孩，看起来比我差一点的。————蜡笔小新</p>
-<p>梵高是个孤独而狂野的散步者，而波德莱尔则是个孤独而忧郁的散步者，一个游荡在大自然中，一个徘徊在巴黎的街巷。殊途同归，两个人的个性都爆发出超常的能量，在各自的领域创造了奇迹。这样的个性不可复制，因果关系错综发杂，几乎是无穷无尽的大小力量全方位起作用的结果。</p>
-<p>查阅原书后，证实了那个迟到的回忆是确切的。————豪尔赫</p>
-]]></content>
-      <categories>
-        <category>摘录</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
