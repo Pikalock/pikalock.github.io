@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>Hexo</title>
+  
+    <link rel="shortcut icon" href="/Users/apple/Desktop/cat.jpg">
+  
+  
+    <link rel='manifest' href='/manifest.json'>
+  
+
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+    <body
+        data-color-scheme="dark"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="always"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="2"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">Blog</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">Home</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item" href="/about">About</a>
+            
+            
+            
+            <a class="nav-item" href="/artgallery">Artgallery</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/pikalock" target="_blank" aria-label="GitHub">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+
+        
+        <div class="date" id="date">
+            <span>March</span>
+            <span>16,</span>
+            <span>2025</span>
+        </div>
+        
+
+        <h1 class="title"></h1>
+    </div>
+
+    <div class="content">
+        <style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #e9f5db 0%, #c7ebe4 50%, #eef7f5 100%);
+  --neuro-pattern: repeating-linear-gradient(45deg, 
+    transparent, transparent 10px,
+    rgba(144,202,247,0.1) 10px, rgba(144,202,247,0.1) 20px);
+}
+
+/* 性能优化样式 */
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: var(--primary-gradient);
+  margin: 0;
+  overflow-x: hidden;
+  will-change: transform; /* 提升动画性能 */
+}
+
+/* 统一卡片系统 */
+.card {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(8px);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--neuro-pattern);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* 神经动态系统 */
+@keyframes neural-flow {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+.neuro-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.neuro-border::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, 
+    #e9f5db, #c7ebe4, #eef7f5, #c7ebe4, #e9f5db);
+  background-size: 400% 400%;
+  animation: neural-flow 12s ease infinite;
+  z-index: -1;
+}
+
+/* 自适应布局系统 */
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  
+  .sidebar {
+    bottom: 1rem;
+    top: auto;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    background: rgba(255,255,255,0.9);
+    border-radius: 2rem;
+    padding: 0.5rem;
+  }
+  
+  .sidebar a {
+    padding: 0.6rem 1rem;
+    font-size: 0.9em;
+  }
+}
+
+/* 动态内容交互 */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 视差层次系统 */
+.parallax-layer {
+  position: relative;
+  transition: transform 0.4s ease-out;
+}
+
+</style>
+
+<div class="container">
+  <!-- 动态标题区 -->
+  <div class="parallax-layer" data-depth="0.2">
+    <h1 style="text-align: center;">🌿 林深</h1>
+    <p style="text-align: center; color: #7f8c8d; margin-bottom: 1rem;">
+      如果能变成蚂蚁<br>我愿居于森林<br>趋近于零<br>∞
+    </p>
+  </div>
+
+  <!-- 档案卡片 -->
+  <div class="card neuro-border" id="profile">
+    <img src="https://bu.dusays.com/2025/02/25/67bd70d25f3a2.jpg" 
+         alt="存在褶皱" 
+         style="border-radius: 12px; width:100%; margin-bottom:1.5rem;">
+
+<strong>About:</strong><br>
+    🌈反人类中心主义  <br>
+    🎹piano 🎻violin 🎷sax 🎨art  <br>
+    🌊大海代我向云朵问好  <br>
+    🌲群山听懂我伤悲，我又岂能懂群山<br>
+
+  <div class="interests"><br>
+      <strong>🌱 核心关注：</strong>
+      <ul>
+        <li>深层生态学建设</li>
+        <li>技术物件的生态重审</li>
+        <li>现象学视角下的环境感知重构</li>
+      </ul>
+    </div>
+    
+<strong>Contact 💌 : </strong> 
+   <a href="mailto:pikalock2024@gmail.com" style="color:#2c3e50;">pikalock2024@gmail.com</a>  
+  </div>
+
+  <!-- 共生宣言 -->
+  <div class="card neuro-border" id="symbiosis">
+    <h2 style="text-align: center; margin-bottom: 2rem;">
+      <span style="font-size:1.5em;">🌱&🔧</span>
+    </h2>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+      <div class="hover-effect" style="padding: 2rem; background: rgba(255,255,255,0.6); border-radius: 1rem;">
+        <p style="font-size:1.2em; line-height:1.4;">
+          <strong>第四次革命不应是技术革命，<br>
+          应该是——技术共生的生态革命。</strong>
+        </p>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(233,245,219,0.3); border-radius: 8px;">
+          <small style="color:#7f8c8d;">“世界首先是被身体丈量的存在之网，<br>其次才是被概念切割的对象集合。”</small><br><br>
+    地球46亿年的层积历史被压缩为人类纪年的切片。<br>正如地球本身只是宇宙物质暂存的形态，人类的感知也不过是碳基分子在时空中的短暂共振。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 认知模块 -->
+  <div class="card" id="quantum">
+    <h3>现象学三棱镜</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+      <div class="hover-effect" style="padding: 1.5rem; background: rgba(233,245,219,0.3); border-radius: 12px;">
+        <strong>意向性潮汐</strong><br>
+        胡塞尔→海德格尔<br>
+        意识的生态化漂流
+      </div>
+      <div class="hover-effect" style="padding: 1.5rem; background: rgba(255,229,210,0.3); border-radius: 12px;">
+        <strong>生态自我的分形</strong><br>
+        诺尔德斯→罗尔斯顿<br>
+        关系网络的拓扑学重构
+      </div>
+      <div class="hover-effect" style="padding: 1.5rem; background: rgba(210,230,255,0.3); border-radius: 12px;">
+        <strong>技术现象学批判</strong><br>
+        西蒙栋→斯蒂格勒<br>
+        物件的生态觉醒
+      </div>
+    </div>
+  </div>
+
+  <!-- 书籍系统 -->
+  <div class="card" id="philosophy">
+    <h2>📚 认知动力装置 —— 2025年份</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+      <div class="hover-effect" style="padding: 1.5rem; background: rgba(233,245,219,0.3); border-radius: 12px;">
+        <h3>人类历史学&哲学</h3>
+        <p>《人类简史》<br>《胡塞尔现象学》<br>《我的世界观》<br>《作为意志和表象的世界》<br>《知觉现象学》</p>
+      </div>
+      <div class="hover-effect" style="padding: 1.5rem; background: rgba(210,230,255,0.3); border-radius: 12px;">
+        <h3>深层生态学</h3>
+        <p>《deep ecology》<br>《A Sand County Almanac》<br>《Environmental Phenomenology》<br>《Being and Time》</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 动态页脚 -->
+  <div style="text-align:center; margin:4rem 0; opacity:0.8;">
+    <div class="parallax-layer" data-depth="0.4">
+      <p style="font-family: cursive;">海浪在岩石上书写现象学<br>风带走所有人类中心主义的注解<br>此刻——<br>我是群山的心跳</p>
+      <hr style="border-top:1px dashed rgba(144,202,247,0.5); margin:2rem auto; width:50%;">
+      <div style="font-size:0.9em;">
+        🌀 本页面持续进行光合作用 ☀️<br>
+        <span style="font-size:0.8em; color:#7f8c8d;">Version 2.0 | 生态感知模式激活</span>
+      </div>
+    </div>
+  </div>
+</div> 
+<script>
+// 智能视差系统
+document.addEventListener('DOMContentLoaded', () => {
+  const layers = document.querySelectorAll('.parallax-layer');
+  const parallax = (e) => {
+    layers.forEach(layer => {
+      const depth = parseFloat(layer.dataset.depth) || 0.3;
+      const x = (window.innerWidth - e.pageX * depth) / 100;
+      const y = (window.innerHeight - e.pageY * depth) / 100;
+      layer.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  }
+  document.addEventListener('mousemove', parallax);
+  // 智能锚点平滑滚动
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+});
+</script>
+
+    </div>
+
+    <div class="container post-prev-next">
+        <a class="next"></a>
+        <a class="prev"></a>
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h2 class="title">Blog</h2>
+                
+                <a href="/archives" class="item">Archives</a>
+                
+                <a href="/atom.xml" class="item">RSS</a>
+                
+                <a href="/artgallery" class="item">Artwork</a>
+                
+            </div>
+            
+        </div>
+        <span>&copy; 2025 pikalock<br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> </span>
+        
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+                
+                
+            </div>
+        
+        <!-- 显示站点总访问量 -->
+<span id="busuanzi_container_site_pv">
+    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+  </span>
+  
+  <!-- 显示站点总访客数 -->
+  <span id="busuanzi_container_site_uv">
+    访客数 <span id="busuanzi_value_site_uv"></span> 人次
+  </span>
+  
+  <!-- 显示单页面访问量（每篇文章的访问量） -->
+  <span id="busuanzi_container_page_pv">
+    本文阅读量 <span id="busuanzi_value_page_pv"></span> 次
+  </span>
+    </div>
+    <!-- 不蒜子统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>
