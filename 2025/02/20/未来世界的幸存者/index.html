@@ -68,7 +68,7 @@
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
     <body
-        data-color-scheme="dark"
+        data-color-scheme="light"
         data-uppercase-categories="true"
         
         data-rainbow-banner="true"
@@ -79,7 +79,7 @@
         data-config-root="/"
         
         data-toc="true"
-        data-toc-max-depth="2"
+        data-toc-max-depth="3"
         
         
     >
@@ -129,7 +129,7 @@
         <h2 id="0x00-Pelude"><a href="#0x00-Pelude" class="headerlink" title="0x00 Pelude:"></a>0x00 Pelude:</h2><blockquote>
 <p><strong>你要主动去接触和学习，那些自己感兴趣的东西。<br>你要做的就是自主、跨界、终身学习。</strong></p>
 </blockquote>
-<p>📚 文档说明 | 基于阮一峰《未来世界的幸存者》的总结和可能的延伸<br>📧 文档建议 | <a href="mailto:&#112;&#x69;&#x6b;&#97;&#108;&#111;&#x63;&#107;&#50;&#48;&#x32;&#52;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#112;&#x69;&#x6b;&#97;&#108;&#111;&#x63;&#107;&#50;&#48;&#x32;&#52;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a><br>📖 原著推荐 | <a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/survivor/">《未来世界的幸存者》</a></p>
+<p>📚 文档说明 | 基于阮一峰《未来世界的幸存者》的总结和可能的延伸<br>📧 文档建议 | <a href="mailto:&#x70;&#105;&#x6b;&#97;&#108;&#x6f;&#x63;&#x6b;&#50;&#48;&#x32;&#52;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;">&#x70;&#105;&#x6b;&#97;&#108;&#x6f;&#x63;&#x6b;&#50;&#48;&#x32;&#52;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;</a><br>📖 原著推荐 | <a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/survivor/">《未来世界的幸存者》</a></p>
 <h2 id="0x01-负重与游荡：现代人的存在困境与突围可能"><a href="#0x01-负重与游荡：现代人的存在困境与突围可能" class="headerlink" title="0x01 负重与游荡：现代人的存在困境与突围可能"></a>0x01 负重与游荡：现代人的存在困境与突围可能</h2><p><a id="0x01-负重与游荡现代人的存在困境与突围可能"></a><br><a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/survivor/plan-b/mule.html">原文</a>：《你的命运不是一头骡子》</p>
 <blockquote>
 <p>杭州的盘山道上，骡子背负铸铁灯柱往返于陡峭石阶；<br>加州河滨的社区草坪，野驴漫步于人工与荒野的交界处。</p>
@@ -1603,24 +1603,7 @@
 
         <footer>
     <div class="inner">
-        <div class="links">
-            
-            <div class="group">
-                <h2 class="title">Blog</h2>
-                
-                <a href="/archives" class="item">Archives</a>
-                
-                <a href="/atom.xml" class="item">RSS</a>
-                
-                <a href="/artgallery" class="item">Artwork</a>
-                
-            </div>
-            
-        </div>
-        <span>&copy; 2025 pikalock<br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> </span>
         
-        
-            <br>
             <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
                 <label>
                     <input type="radio" value="light">
@@ -1634,30 +1617,104 @@
                     <input type="radio" value="auto">
                     <span>Auto</span>
                 </label>
-                
-                
             </div>
         
-        <!-- 显示站点总访问量 -->
-<span id="busuanzi_container_site_pv">
-    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
-  </span>
-  
-  <!-- 显示站点总访客数 -->
-  <span id="busuanzi_container_site_uv">
-    访客数 <span id="busuanzi_value_site_uv"></span> 人次
-  </span>
-  
-  <!-- 显示单页面访问量（每篇文章的访问量） -->
-  <span id="busuanzi_container_page_pv">
-    本文阅读量 <span id="busuanzi_value_page_pv"></span> 次
-  </span>
+
+        <div class="site-statistics">
+            <span id="busuanzi_container_site_pv">
+                All visits:<span id="busuanzi_value_site_pv"></span>
+            </span>
+            <span id="busuanzi_container_site_uv">
+                Total visitors:<span id="busuanzi_value_site_uv"></span> 
+            </span>
+        </div>
     </div>
-    <!-- 不蒜子统计 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+    <style>
+        footer {
+            padding: 2rem 0;
+            position: relative;
+            z-index: 900;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(5px);
+            border-top: 1px solid rgba(144,202,247,0.3);
+            margin-top: -80px; /* 补偿容器底部间距 */
+        }
+
+        /* 与彩虹栏衔接的渐变 */
+        footer::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, 
+                rgba(255,107,107,0.4) 0%, 
+                rgba(78,205,196,0.4) 25%,
+                rgba(69,183,209,0.4) 50%,
+                rgba(150,201,61,0.4) 75%,
+                rgba(255,107,107,0.4) 100%);
+        }
+
+        .site-statistics {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            footer::after {
+                top: -3px;
+                height: 3px;
+            }
+        }
+        .inner {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            min-height: 80px;
+        }
+        .color-scheme-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-right: auto;
+        }
+        .color-scheme-toggle label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        .site-statistics {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9em;
+            color: var(--text-secondary-color);
+        }
+        @media (max-width: 768px) {
+            .inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+            }
+            .color-scheme-toggle {
+                margin-right: 0;
+                order: 2;
+            }
+            }
+    </style>
 </footer>
-
 
         
 <script src="/js/main.js"></script>
