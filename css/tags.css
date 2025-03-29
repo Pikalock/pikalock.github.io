@@ -1,19 +1,57 @@
-.tags .tag {
-  padding: 8px 16px;
-  margin: 4px;
-  font-size: 14px;
-  border-radius: 980px;
-  background-color: var(--white);
-  color: var(--black-2);
-  text-decoration: none;
-  border: 1px solid var(--border-color);
-}
-
-.tags .tag:hover {
-  background-color: var(--white-1);
-  color: var(--black);
-}
-
 .tags {
-  margin-bottom: 128px;
+  margin: 8px 0;
+  font-size: 0.8em;
+  /* 添加中文字体栈确保兼容性 */
+}
+
+.tag {
+  display: inline-block;
+  color: #327eca; /* 深蓝色文字 */
+  margin-right: 1em; /* 用em单位实现弹性间距 */
+  /* 如果需精确4个空格宽度，可改用 margin-right: 32px; */
+  letter-spacing: 0.05em; /* 增加字距提升可读性 */
+}
+
+/* 可选：最后一个标签清除右边距 */
+.tag:last-child {
+  margin-right: 0;
+}
+
+.tag-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tag-cloud-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tag-cloud {
+  text-align: center;
+  line-height: 2;
+}
+
+.tag-cloud-item {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 3px 12px;
+  background: #f0f8ff;
+  border-radius: 15px;
+  color: #1e88e5;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.tag-cloud-item:hover {
+  background: #1e88e5;
+  color: white;
+  transform: scale(1.1);
+}
+
+.no-tags {
+  text-align: center;
+  color: #999;
+  padding: 50px 0;
 }
