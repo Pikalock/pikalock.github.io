@@ -64,3 +64,8 @@ h1, h2, h3 {
 code, pre {
     font-family: monospace; /* 代码保持等宽字体 */
 }
+
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}

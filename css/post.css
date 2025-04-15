@@ -378,3 +378,8 @@ body[data-color-scheme="dark"] .tags .icon {
   margin-bottom: 4px;
   color: var(--grey);
 }
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}

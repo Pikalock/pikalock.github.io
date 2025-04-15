@@ -27,3 +27,8 @@
   background-color: var(--white-1);
   color: var(--black);
 }
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
