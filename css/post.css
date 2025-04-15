@@ -217,6 +217,9 @@ hr,
 }
 
 .tags {
+  font-weight: normal;
+	font-size: 24px;
+	color: #f5a45b;
   display: flex;
   flex-wrap: wrap;
 }
@@ -379,6 +382,11 @@ body[data-color-scheme="dark"] .tags .icon {
   color: var(--grey);
 }
 
+.post-list-item a, .post-list-item a:hover, .post-list-item a:focus, .post-list-item a:active, .post-list-item a:link, .post-list-item a:visited {
+	font-weight: bold;
+	font-size: 24px;
+	color: #f89a56;
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));

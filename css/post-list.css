@@ -6,14 +6,26 @@
   margin: auto;
 }
 
+.post-list-item a, .post-list-item a:hover, .post-list-item a:focus, .post-list-item a:active, .post-list-item a:link, .post-list-item a:visited {
+	font-weight: bold;
+	font-size: 24px;
+	color: #f89a56;
+}
+
 @media screen and (max-width: 600px) {
   .post-list {
     display: block;
     max-width: 366px;
   }
 }
-
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
 .post-list-item {
+  font-weight: normal;
+	font-size: 24px;
+	color: #f5a45b;
   overflow: hidden;
   border-radius: 16px;
   background-color: var(--card-bg);
@@ -168,9 +180,4 @@
   width: 20vw;
   border-radius: 16px;
   flex-shrink: 0;
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
