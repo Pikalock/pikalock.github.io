@@ -1,0 +1,161 @@
+/* themes/hexo-theme-cupertino-master/source/css/tags.css */
+
+/* ==========================================================================
+   Tags Page Styles
+   ========================================================================== */
+
+/* --- Base Variables (Define these globally or adapt) --- */
+:root {
+  --tags-bg: #ffffff; /* Background for the container, might be transparent if inheriting */
+  --tags-text-primary: #2c3e50;
+  --tags-text-secondary: #555;
+  --tags-text-tertiary: #888;
+  --tags-border-color: #eaecef;
+  --tags-link-color: #3498db; /* Example link color */
+
+  --tag-item-bg: #f2f6fa;
+  --tag-item-text: #5a6a7a;
+  --tag-item-hover-bg: #3498db; /* Match link color */
+  --tag-item-hover-text: #ffffff;
+  --tag-item-count-color: #90a0b0;
+  --tag-item-radius: 4px;
+
+  --tags-max-width: 960px;
+  --tags-container-padding: 2rem 1.5rem;
+  --tags-title-margin-bottom: 2.5rem;
+  --tags-cloud-gap: 10px 15px; /* row-gap column-gap */
+  --tag-item-padding: 0.5em 1em;
+}
+
+[data-current-color-scheme="dark"] {
+  --tags-bg: #1e1e1e; /* Dark background for the container */
+  --tags-text-primary: #d4d4d4;
+  --tags-text-secondary: #b0b0b0;
+  --tags-text-tertiary: #7a7a7a;
+  --tags-border-color: #3a3a3a;
+  --tags-link-color: #5dade2; /* Lighter link color for dark mode */
+
+  --tag-item-bg: #2a2a2a;
+  --tag-item-text: #b0b0b0;
+  --tag-item-hover-bg: #5dade2; /* Match dark link color */
+  --tag-item-hover-text: #1e1e1e;
+  --tag-item-count-color: #7a7a7a;
+}
+
+/* --- Apply styles specifically within the tags partial --- */
+.page-tags-content .tag-container {
+  max-width: var(--tags-max-width);
+  margin: 0 auto; /* Center the container */
+  padding: var(--tags-container-padding);
+  /* background-color: var(--tags-bg); */ /* Optional: remove if page background is sufficient */
+  /* Optional: Add border or shadow if desired */
+  /* border: 1px solid var(--tags-border-color); */
+  /* border-radius: 8px; */
+}
+
+
+/* --- Title Area --- */
+.page-tags-content .tag-cloud-title {
+  text-align: center;
+  margin-bottom: var(--tags-title-margin-bottom);
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--tags-border-color);
+}
+
+.page-tags-content .tag-cloud-title h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--tags-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.page-tags-content .tag-cloud-title p {
+  font-size: 1.1em;
+  color: var(--tags-text-secondary);
+  margin-top: 0;
+}
+
+/* --- Tag Cloud --- */
+.page-tags-content .tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline; /* Align tags based on text baseline */
+  gap: var(--tags-cloud-gap);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Individual Tag Item --- */
+.page-tags-content .tag-cloud-item {
+  display: inline-block;
+  background-color: var(--tag-item-bg);
+  color: var(--tag-item-text);
+  padding: var(--tag-item-padding);
+  border-radius: var(--tag-item-radius);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+  line-height: 1.4; /* Adjust line height for better vertical alignment */
+  /* font-size is set inline via EJS */
+}
+
+.page-tags-content .tag-cloud-item .tag-name {
+  /* No specific styles needed usually, inherits from parent */
+}
+
+.page-tags-content .tag-cloud-item .tag-count {
+  font-size: 0.8em; /* Make count slightly smaller */
+  color: var(--tag-item-count-color);
+  margin-left: 0.4em;
+  /* opacity: 0.8; */
+}
+
+/* --- Tag Hover Effect --- */
+.page-tags-content .tag-cloud-item:hover {
+  background-color: var(--tag-item-hover-bg);
+  color: var(--tag-item-hover-text);
+  transform: translateY(-2px);
+}
+
+.page-tags-content .tag-cloud-item:hover .tag-count {
+   color: var(--tag-item-hover-text); /* Match text color on hover */
+   opacity: 0.85; /* Slightly fade count on hover */
+}
+
+
+/* --- No Tags Message --- */
+.page-tags-content .no-tags-message {
+  text-align: center;
+  font-size: 1.1em;
+  color: var(--tags-text-secondary);
+  margin-top: 2rem;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .page-tags-content { /* Target adjustments within this context */
+      --tags-container-padding: 1.5rem 1rem;
+      --tags-title-margin-bottom: 2rem;
+      --tags-cloud-gap: 8px 12px;
+      --tag-item-padding: 0.4em 0.8em;
+  }
+
+  .page-tags-content .tag-cloud-title h1 {
+    font-size: 2em;
+  }
+
+  .page-tags-content .tag-cloud-title p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+   .page-tags-content {
+     --tag-item-padding: 0.3em 0.6em;
+   }
+   .page-tags-content .tag-cloud-title h1 {
+     font-size: 1.8em;
+   }
+}

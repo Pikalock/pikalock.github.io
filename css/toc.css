@@ -1,0 +1,62 @@
+.toc > p {
+  margin: 0;
+}
+
+.toc > p > a {
+  color: var(--black-4);
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 0;
+  padding-left: 12px;
+  border-left: 1px solid var(--border-color);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.toc > p > a:hover,
+.toc > p > a:focus-visible {
+  color: var(--black);
+  text-decoration: none;
+  border-color: var(--black-2);
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: minmax(0, 800px) 260px;
+  gap: 40px;
+  position: relative;
+}
+
+.post-toc {
+  position: sticky;
+  top: 100px;
+  height: calc(100vh - 140px);
+  padding: 20px;
+  background: rgba(var(--bg-primary), 0.9);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(10px);
+  overflow-y: auto;
+}
+
+.toc-header {
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bg-accent);
+  margin-bottom: 15px;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-title);
+}
+
+.toc-progress {
+  height: 3px;
+  background: linear-gradient(90deg, var(--bg-accent) 0%, transparent 100%);
+  transition: width 0.3s ease;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .post-container {
+    grid-template-columns: 1fr;
+  }
+  .post-toc {
+    display: none; /* 移动端通过右下角悬浮按钮触发 */
+  }
+}

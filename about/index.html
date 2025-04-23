@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>Hexo</title>
+  
+    <link rel="shortcut icon" href="/Users/apple/Desktop/cat.jpg">
+  
+  
+    <link rel='manifest' href='/manifest.json'>
+  
+
+  
+  
+  
+  <meta property="og:title" content="Hexo" />
+  
+  <meta property="og:type" content="website" />
+  
+  <meta property="og:url" content="https://pikalock.github.io/about/index.html" />
+  
+  <meta property="og:image" content="/favicon.png" />
+  
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body
+        data-color-scheme="light"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="always"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="3"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">Blog</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">Home</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item" href="/about">About</a>
+            
+            
+            
+            <a class="nav-item" href="/artgallery">Artgallery</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/pikalock" target="_blank" aria-label="GitHub">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+
+        
+        <div class="date" id="date">
+            <span>April</span>
+            <span>23,</span>
+            <span>2025</span>
+        </div>
+        
+
+        <h1 class="title">   </h1>
+    </div>
+
+    <div class="content">
+        <style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #e9f5db 0%, #c7ebe4 50%, #eef7f5 100%);
+  --neuro-pattern: repeating-linear-gradient(45deg, 
+    transparent, transparent 10px,
+    rgba(144,202,247,0.1) 10px, rgba(144,202,247,0.1) 20px);
+}
+/* 防爬邮箱样式 */
+.email-protect span::after {
+  content: attr(data-user) "@" attr(data-domain);
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.direct-links {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.friend-item {
+  padding: 1.5rem;
+  border-left: 4px solid #7EB4C5;
+  background: rgba(126, 180, 197, 0.1);
+  transition: transform 0.3s;
+}
+
+.friend-item:hover {
+  transform: translateX(10px);
+}
+
+.friend-item h3 {
+  color: #4A707A;
+  margin: 0 0 0.5rem;
+}
+
+.friend-item .motto {
+  font-style: italic;
+  color: #7697A0;
+  margin: 0 0 1rem;
+}
+
+.friend-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #5B909E;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+}
+
+.friend-item a:hover {
+  color: #4A707A;
+  border-bottom-color: currentColor;
+}
+
+
+
+/* 彩虹栏独立定位 */
+.container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    #ff6b6b 0%, #4ecdc4 25%, 
+    #45b7d1 50%, #96c93d 75%, 
+    #ff6b6b 100%);
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.container {
+  background: var(--primary-gradient);
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+/* 性能优化样式 */
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: var(--primary-gradient);
+  padding-top: 4px; /* 补偿彩虹栏高度 */
+  margin: 0;
+  overflow-x: hidden;
+  will-change: transform; /* 提升动画性能 */
+}
+
+/* 统一卡片系统 */
+.card {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(8px);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--neuro-pattern);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* 神经动态系统 */
+@keyframes neural-flow {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+.neuro-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.neuro-border::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, 
+    #e9f5db, #c7ebe4, #eef7f5, #c7ebe4, #e9f5db);
+  background-size: 400% 400%;
+  animation: neural-flow 12s ease infinite;
+  z-index: -1;
+}
+
+/* 自适应布局系统 */
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  
+  .sidebar {
+    bottom: 1rem;
+    top: auto;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    background: rgba(255,255,255,0.9);
+    border-radius: 2rem;
+    padding: 0.5rem;
+  }
+  
+  .sidebar a {
+    padding: 0.6rem 1rem;
+    font-size: 0.9em;
+  }
+}
+
+/* 动态内容交互 */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 视差层次系统 */
+.parallax-layer {
+  position: relative;
+  transition: transform 0.4s ease-out;
+}
+
+</style>
+
+<div class="container">
+  <!-- 动态标题区 -->
+  <div class="parallax-layer" data-depth="0.2">
+    <h1 style="text-align: center;">🌿 林深</h1>
+    <p style="text-align: center; color: #7f8c8d; margin-bottom: 1rem;">
+      如果能变成蚂蚁<br>我愿居于森林<br>趋近于零<br>∞
+    </p>
+  </div>
+
+  <!-- 档案卡片 -->
+  <div class="card neuro-border" id="profile">
+    <img src="https://bu.dusays.com/2025/02/25/67bd70d25f3a2.jpg" 
+         alt="存在褶皱" 
+         style="border-radius: 12px; width:100%; margin-bottom:1.5rem;">
+
+<strong>🌱About:</strong><br>
+    🌈反人类中心主义  <br>
+    🎹piano 🎻violin 🎷sax 🎨art  <br>
+    🌊大海代我向云朵问好  <br>
+    🌲群山听懂我伤悲，我又岂能懂群山<br>
+
+    <div class="interests"><br>
+      <strong>🐱核心关注：</strong>
+      <ul>
+        <li>深层生态学建设</li>
+        <li>技术物件的生态重审</li>
+        <li>现象学视角下的环境感知重构</li>
+      </ul>
+    </div>
+
+  <section class="friend-intro">
+ 
+<strong>👬Friends:</strong>
+      <p>发现还有两个小伙伴把我加了友链（感激涕零，遂添之。</p>
+      <p>如果你对我感兴趣，请别当回事；如果你对生态哲学感兴趣，请速速过来。</p>
+      <p class="email-protect">📮 Contact: pikalock2024@gmail.com </p>
+    </section>
+    
+    <div class="direct-links">
+      <!--- 固定友链 -->
+      <article class="friend-item">
+        <h3>Cyrus</h3>
+        <p class="motto">Think twice, code once.</p>
+        <a href="https://blog.codecyrus.com" target="_blank" rel="noopener">🌐 https://blog.codecyrus.com</a>
+      </article>
+    
+      <article class="friend-item">
+        <h3>Hsad</h3>
+        <p class="motto">一个人的世界</p>
+        <a href="https://hsad.xyz" target="_blank" rel="noopener">🌌 https://hsad.xyz</a>
+      </article>
+    </div>
+  
+    <div style="text-align: center; margin: 2rem 0; font-family: '楷体', cursive; color: #4a5568; line-height: 1.8;">
+      <p style="border-left: 3px solid #4ecdc4; padding-left: 1rem;">
+        谁是谁非 谁相随<br>
+        戎马一生 为了谁<br>
+        我能爱几回恨几回<br>
+        败帝王 斗苍天<br>
+        我夺得皇位已成仙<br>
+        豪情万丈天地间<br>
+        续写另类帝王篇<br>
+      </p>
+    </div>
+  
+  
+  </div> 
+  <!-- 共生宣言 -->
+  <div class="card neuro-border" id="symbiosis">
+    <h2 style="text-align: center; margin-bottom: 2rem;">
+      <span style="font-size:1.5em;">🌱&🔧</span>
+    </h2>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+      <div class="hover-effect" style="padding: 2rem; background: rgba(255,255,255,0.6); border-radius: 1rem;">
+        <p style="font-size:1.2em; line-height:1.4;">
+          <strong>第四次革命不应是技术革命，应该是——技术共生的生态革命。</strong>
+        </p>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(233,245,219,0.3); border-radius: 8px;">
+          <small style="color:#7f8c8d;">“世界首先是被身体丈量的存在之网，<br>其次才是被概念切割的对象集合。”</small><br><br>
+    地球46亿年的层积历史被压缩为人类纪年的切片。<br>正如地球本身只是宇宙物质暂存的形态，人类的感知也不过是碳基分子在时空中的短暂共振。
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 书籍系统 -->
+  <div class="card" id="philosophy">
+    <h2>📚 认知动力装置 —— 2025年份</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+      <div class="hover-effect" style="padding: 1.5rem; background: rgba(233,245,219,0.3); border-radius: 12px;">
+        <h3>人类历史学&哲学</h3>
+        <p>《人类简史》<br>《胡塞尔现象学》<br>《我的世界观》<br>《作为意志和表象的世界》<br>《知觉现象学》<br>《自然史》 <br> 《人生的智慧》<br> 《人类行为心理学》<br> 《哲学简史》</p>
+      </div>
+      <div class="hover-effect" style="padding: 1.5rem; background: rgba(210,230,255,0.3); border-radius: 12px;">
+        <h3>深层生态学</h3>
+        <p>《deep ecology》<br>《A Sand County Almanac》<br>《Environmental Phenomenology》<br>《Being and Time》</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 动态页脚 -->
+  <div style="text-align:center; margin:4rem 0; opacity:0.8;">
+    <div class="parallax-layer" data-depth="0.4">
+      <p style="font-family: cursive;">海浪在岩石上书写现象学<br>风带走所有人类中心主义的注解<br>此刻——<br>我是群山的心跳</p>
+      <hr style="border-top:1px dashed rgba(144,202,247,0.5); margin:2rem auto; width:50%;">
+      <div style="font-size:0.9em;">
+        🌀 本页面持续进行光合作用 ☀️<br>
+        <span style="font-size:0.8em; color:#7f8c8d;">Version 2.0 | 生态感知模式激活</span>
+      </div>
+    </div>
+  </div>
+</> 
+<script>
+// 智能视差系统
+document.addEventListener('DOMContentLoaded', () => {
+  const layers = document.querySelectorAll('.parallax-layer');
+  const parallax = (e) => {
+    layers.forEach(layer => {
+      const depth = parseFloat(layer.dataset.depth) || 0.3;
+      const x = (window.innerWidth - e.pageX * depth) / 100;
+      const y = (window.innerHeight - e.pageY * depth) / 100;
+      layer.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  }
+  document.addEventListener('mousemove', parallax);
+  // 智能锚点平滑滚动
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+});
+</script>
+
+    </div>
+
+
+    <div class="container post-prev-next">
+        <a class="next"></a>
+        <a class="prev"></a>
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+        </div>
+        <span></span>
+              
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>

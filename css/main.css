@@ -1,0 +1,76 @@
+* {
+    transition: color 0.2s, background-color 0.2s;
+}
+
+body {
+    margin: 0;
+    margin-top: 56px;
+    color: var(--black-2);
+    background-color: var(--body-bg);
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a:link {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+.section-title {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 700;
+    letter-spacing: .004em;
+    margin-bottom: 24px;
+    color: var(--card-title);
+}
+
+.theme-command {
+    display: none;
+}
+
+/* 通用字体设置 */
+body {
+    font-family: 
+        /* 西文字体 */ 
+        "Times New Roman", serif,
+        /* 中文字体 */
+        "Noto Serif SC", "STZhongsong","SimSun",serif;
+}
+
+/* 可选：单独调整标题/代码等元素的字体 */
+h1, h2, h3 {
+    font-family: inherit; /* 继承全局字体 */
+}
+
+code, pre {
+    font-family: monospace; /* 代码保持等宽字体 */
+}
+
+.post-list-item a, .post-list-item a:hover, .post-list-item a:focus, .post-list-item a:active, .post-list-item a:link, .post-list-item a:visited {
+	font-weight: bold;
+	font-size: 24px;
+	color: #f89a56;
+}
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}

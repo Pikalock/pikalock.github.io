@@ -1,0 +1,29 @@
+.meta {
+  margin-top: 128px;
+}
+
+.meta .type {
+  color: var(--grey);
+  font-weight: 600;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+/* 归档页面摘要样式 */
+.archive-summary {
+  color: #888;
+    font-style: italic;
+    margin: 5px 0;
+}  
+  
+.post-list-item a, .post-list-item a:hover, .post-list-item a:focus, .post-list-item a:active, .post-list-item a:link, .post-list-item a:visited {
+	font-weight: bold;
+	font-size: 24px;
+	color: #f89a56;
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}

@@ -1,0 +1,48 @@
+/* gallery.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .art-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .art-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .art-card img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .art-card .content {
+    padding: 15px;
+  }
+  
+  .art-card .content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .art-card .content p {
+    color: #777;
+    font-size: 0.9em;
+  }
+  
