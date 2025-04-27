@@ -136,29 +136,141 @@
     </div>
 
     <div class="content">
-        <!-- 在<head>中添加Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林深 - 生态感知</title> <!-- 添加了标题 -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Consider adding Merriweather font if not locally available -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> -->
 
 <style>
+/* --- CSS Variables --- */
 :root {
   --primary-gradient: linear-gradient(135deg, #e9f5db 0%, #c7ebe4 50%, #eef7f5 100%);
-  --neuro-pattern: repeating-linear-gradient(45deg, 
+  --neuro-pattern: repeating-linear-gradient(45deg,
     transparent, transparent 10px,
-    rgba(144,202,247,0.1) 10px, rgba(144,202,247,0.1) 20px);
+    rgba(144, 202, 247, 0.1) 10px, rgba(144, 202, 247, 0.1) 20px);
+  --link-color: #5B909E;
+  --link-hover-color: #4A707A;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  --text-color: #2c3e50;
+  --text-muted-color: #7f8c8d;
+  --telegram-blue: #0088cc;
+  --telegram-blue-hover: #0066a3;
+  --friend-border-color: #7EB4C5;
+  --friend-bg-color: rgba(126, 180, 197, 0.1);
+  --friend-title-color: #4A707A;
+  --friend-motto-color: #7697A0;
 }
 
+/* --- Base Styles --- */
+body {
+  font-family: 'Merriweather', serif; /* Ensure Merriweather is loaded or use a fallback */
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--primary-gradient);
+  padding-top: 4px; /* Compensate for fixed rainbow bar */
+  margin: 0;
+  overflow-x: hidden;
+  /* will-change can consume memory, use judiciously. Applied here due to frequent parallax updates. */
+  will-change: transform;
+}
+
+/* --- Layout: Container & Rainbow Bar --- */
+.container {
+  background: var(--primary-gradient);
+  overflow-x: hidden; /* Already on body, might be redundant */
+  position: relative;
+}
+
+/* Rainbow bar fixed at the top */
+.container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,
+    #ff6b6b 0%, #4ecdc4 25%,
+    #45b7d1 50%, #96c93d 75%,
+    #ff6b6b 100%);
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Components: Card System --- */
+.card {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  background: var(--card-bg);
+  border-radius: 1.5rem;
+  box-shadow: var(--card-shadow);
+  /* backdrop-filter can impact performance, especially on low-end devices */
+  backdrop-filter: blur(8px);
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1; /* Ensure card content is above pseudo-elements */
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit; /* Match parent border-radius */
+  background: var(--neuro-pattern);
+  opacity: 0.3;
+  z-index: -1; /* Behind card content */
+}
+
+/* --- Components: Neuro Effects --- */
+/* Animated border effect */
+.neuro-border {
+  position: relative;
+  overflow: hidden; /* Clip the animated ::after element */
+}
+
+.neuro-border::after {
+  content: '';
+  position: absolute;
+  inset: -2px; /* Slightly larger to create border effect */
+  background: linear-gradient(45deg,
+    #e9f5db, #c7ebe4, #eef7f5, #c7ebe4, #e9f5db);
+  background-size: 400% 400%;
+  /* neural-flow animation can be performance-intensive */
+  animation: neural-flow 12s ease infinite;
+  z-index: -2; /* Behind card::before */
+  border-radius: inherit; /* Match parent border-radius */
+}
+
+@keyframes neural-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Components: Friend Introduction --- */
 .friend-intro {
-    max-width: 400px;
+  max-width: 400px; /* Smaller max-width within the card */
     padding: 20px;
-    background: #f8f9fa; /* 轻微灰背景 */
+    background: #f8f9fa; /* Light gray background */
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    margin: 20px auto;
+    margin: 20px auto; /* Center within its container */
     text-align: center;
 }
 
 .friend-intro strong {
-    color: #0088cc; /* Telegram 蓝色 */
+    color: var(--telegram-blue);
     font-size: 1.2em;
 }
 
@@ -167,11 +279,25 @@
     line-height: 1.5;
 }
 
-.sidebar-button-link {
+/* Email protection styles */
+.email-protect {
+    color: #6c757d; /* Lighter gray for email hint */
+    margin: 10px 0;
+}
+/* Anti-spam email display trick */
+.email-protect span::after {
+  content: attr(data-user) "@" attr(data-domain);
+  unicode-bidi: bidi-override;
+  direction: rtl; /* Reverses the text order */
+  display: inline-block; /* Ensure it behaves like text */
+}
+
+/* --- Components: Buttons --- */
+.sidebar-button-link { /* Renamed from sidebar context but kept style */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #0088cc;
+    background: var(--telegram-blue);
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
@@ -181,27 +307,16 @@
 }
 
 .sidebar-button-link:hover {
-    background: #0066a3;
+    background: var(--telegram-blue-hover);
     transform: translateY(-2px);
 }
 
 .sidebar-button-icon {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Larger icon */
     margin-right: 8px;
 }
 
-.email-protect {
-    color: #6c757d; /* 浅灰色 */
-    margin: 10px 0;
-}
-
-/* 防爬邮箱样式 */
-.email-protect span::after {
-  content: attr(data-user) "@" attr(data-domain);
-  unicode-bidi: bidi-override;
-  direction: rtl;
-}
-
+/* --- Components: Friend Link Items --- */
 .direct-links {
   margin: 2rem 0;
   display: grid;
@@ -210,9 +325,9 @@
 
 .friend-item {
   padding: 1.5rem;
-  border-left: 4px solid #7EB4C5;
-  background: rgba(126, 180, 197, 0.1);
-  transition: transform 0.3s;
+  border-left: 4px solid var(--friend-border-color);
+  background: var(--friend-bg-color);
+  transition: transform 0.3s ease; /* Combined transition */
 }
 
 .friend-item:hover {
@@ -220,179 +335,230 @@
 }
 
 .friend-item h3 {
-  color: #4A707A;
+  color: var(--friend-title-color);
   margin: 0 0 0.5rem;
 }
 
 .friend-item .motto {
   font-style: italic;
-  color: #7697A0;
+  color: var(--friend-motto-color);
   margin: 0 0 1rem;
 }
 
 .friend-item a {
-  display: inline-flex;
+  display: inline-flex; /* Better alignment with icon if added */
   align-items: center;
   gap: 0.5rem;
-  color: #5B909E;
+  color: var(--link-color);
   text-decoration: none;
   border-bottom: 1px dashed transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transitions */
 }
 
 .friend-item a:hover {
-  color: #4A707A;
-  border-bottom-color: currentColor;
+  color: var(--link-hover-color);
+  border-bottom-color: currentColor; /* Use the current text color */
 }
 
-
-
-/* 彩虹栏独立定位 */
-.container::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, 
-    #ff6b6b 0%, #4ecdc4 25%, 
-    #45b7d1 50%, #96c93d 75%, 
-    #ff6b6b 100%);
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* --- Components: Specific Content Styles --- */
+.page-header { /* Style for the main header */
+    text-align: center;
+    padding: 2rem 1rem 0; /* Padding for spacing */
+}
+.page-header h1 {
+    margin-bottom: 0.5rem; /* Adjust spacing */
+}
+.page-header .subtitle { /* Class for the subtitle paragraph */
+    color: var(--text-muted-color);
+    margin-bottom: 1rem;
 }
 
-
-.container {
-  background: var(--primary-gradient);
-  overflow-x: hidden;
-  position: relative;
+#profile img { /* Style the profile image */
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1.5rem;
+    display: block; /* Remove extra space below image */
+}
+#profile .interests ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+    text-align: left; /* Align list items left */
+    display: inline-block; /* Center the block */
+    margin-top: 0.5rem;
+}
+#profile .interests li::before {
+    content: " M "; /* Example bullet, replace or style as needed */
+    color: var(--friend-border-color);
+    margin-right: 0.5em;
 }
 
-
-/* 性能优化样式 */
-body {
-  font-family: 'Merriweather', serif;
-  line-height: 1.6;
-  color: #2c3e50;
-  background: var(--primary-gradient);
-  padding-top: 4px; /* 补偿彩虹栏高度 */
-  margin: 0;
-  overflow-x: hidden;
-  will-change: transform; /* 提升动画性能 */
+.poem { /* Styles for the poem block */
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'KaiTi', 'STKaiti', '楷体', cursive; /* Font stack for KaiTi */
+    color: #4a5568;
+    line-height: 1.8;
+}
+.poem p {
+    display: inline-block; /* Allow centering */
+    text-align: left; /* Align text left within the block */
+    border-left: 3px solid #4ecdc4;
+    padding-left: 1rem;
+    margin: 0; /* Remove default paragraph margin */
 }
 
-/* 统一卡片系统 */
-.card {
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 1200px;
-  background: rgba(255,255,255,0.9);
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-  backdrop-filter: blur(8px);
-  position: relative;
-  transition: transform 0.3s ease;
+#symbiosis h2 span {
+    font-size: 1.5em;
 }
-
-.card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--neuro-pattern);
-  opacity: 0.3;
-  z-index: -1;
+#symbiosis .grid-container { /* Specific class for the grid */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 2rem;
 }
-
-/* 神经动态系统 */
-@keyframes neural-flow {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 100%; }
-}
-
-.neuro-border {
-  position: relative;
-  overflow: hidden;
-}
-
-.neuro-border::after {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(45deg, 
-    #e9f5db, #c7ebe4, #eef7f5, #c7ebe4, #e9f5db);
-  background-size: 400% 400%;
-  animation: neural-flow 12s ease infinite;
-  z-index: -1;
-}
-
-/* 自适应布局系统 */
-@media (max-width: 768px) {
-  .card {
-    margin: 1rem;
-    padding: 1.5rem;
+#symbiosis .symbiosis-item { /* Style for the item within symbiosis grid */
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 1rem;
-  }
-  
-  .sidebar {
-    bottom: 1rem;
-    top: auto;
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: row;
-    background: rgba(255,255,255,0.9);
-    border-radius: 2rem;
-    padding: 0.5rem;
-  }
-  
-  .sidebar a {
-    padding: 0.6rem 1rem;
-    font-size: 0.9em;
-  }
+}
+#symbiosis .symbiosis-item p strong {
+    font-size: 1.2em;
+    line-height: 1.4;
+    display: block; /* Ensure strong takes full width */
+    margin-bottom: 1rem; /* Spacing after strong text */
+}
+#symbiosis .quote-block {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(233, 245, 219, 0.3);
+    border-radius: 8px;
+}
+#symbiosis .quote-block small {
+    color: var(--text-muted-color);
 }
 
-/* 动态内容交互 */
+#philosophy .book-grid { /* Specific class for the book grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#philosophy .book-list { /* Common style for book list boxes */
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+#philosophy .book-list h3 {
+    margin-top: 0; /* Remove top margin */
+    color: var(--friend-title-color); /* Use consistent title color */
+}
+#philosophy .book-list p {
+    margin-bottom: 0; /* Remove bottom margin if needed */
+    line-height: 1.8; /* Adjust line height for readability */
+}
+/* Specific backgrounds for book lists */
+#philosophy .humanities {
+    background: rgba(233, 245, 219, 0.3);
+}
+#philosophy .ecology {
+    background: rgba(210, 230, 255, 0.3);
+}
+
+/* --- Footer Styles --- */
+.page-footer {
+    text-align: center;
+    margin: 4rem 0 2rem; /* Added bottom margin */
+    opacity: 0.8;
+}
+.page-footer .footer-text {
+    font-family: cursive;
+    margin-bottom: 2rem; /* Spacing before hr */
+}
+.page-footer hr {
+    border: 0; /* Reset default border */
+    border-top: 1px dashed rgba(144, 202, 247, 0.5);
+    margin: 2rem auto;
+    width: 50%;
+}
+.page-footer .version-info {
+    font-size: 0.9em;
+}
+.page-footer .version-info span {
+    font-size: 0.8em;
+    color: var(--text-muted-color);
+    display: block; /* Ensure it takes its own line */
+    margin-top: 0.5rem; /* Spacing */
+}
+
+/* --- Utilities --- */
+.text-center {
+  text-align: center;
+}
+
 .hover-effect {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-effect:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: var(--card-hover-shadow);
 }
 
-/* 视差层次系统 */
+/* --- Parallax --- */
 .parallax-layer {
-  position: relative;
+  /* Position relative is default for static, needed if positioned ancestor */
+  /* position: relative; */
   transition: transform 0.4s ease-out;
 }
 
-</style>
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
 
-<div class="container">
-  <!-- 动态标题区 -->
-  <div class="parallax-layer" data-depth="0.2">
-    <h1 style="text-align: center;">🌿 林深</h1>
-    <p style="text-align: center; color: #7f8c8d; margin-bottom: 1rem;">
+  /* Removed .sidebar rules as element is not present */
+
+  /* Adjust grid for smaller screens if needed */
+  #philosophy .book-grid {
+      grid-template-columns: 1fr; /* Stack book lists on small screens */
+  }
+
+  .page-footer {
+    margin: 2rem 0 1rem; /* Adjust footer margin */
+  }
+}
+
+</style>
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+<body>
+
+<main class="container">
+  <!-- Dynamic Header Area -->
+  <header class="page-header parallax-layer" data-depth="0.2">
+    <h1>🌿 林深</h1>
+    <p class="subtitle">
       如果能变成蚂蚁<br>我愿居于森林<br>趋近于零<br>∞
     </p>
-  </div>
+  </header>
 
-  <!-- 档案卡片 -->
-  <div class="card neuro-border" id="profile">
-    <img src="https://bu.dusays.com/2025/02/25/67bd70d25f3a2.jpg" 
-         alt="存在褶皱" 
-         style="border-radius: 12px; width:100%; margin-bottom:1.5rem;">
+  <!-- Profile Card Section -->
+  <section class="card neuro-border" id="profile">
+    <img src="https://bu.dusays.com/2025/02/25/67bd70d25f3a2.jpg"
+         alt="存在褶皱 - 个人代表图像"
+         loading="lazy"> <!-- Added lazy loading -->
 
-<strong>🌱About:</strong><br>
-    🌈反人类中心主义  <br>
-    🎹piano 🎻violin 🎷sax 🎨art  <br>
-    🌊大海代我向云朵问好  <br>
-    🌲群山听懂我伤悲，我又岂能懂群山<br>
+    <strong>🌱 About:</strong><br>
+    🌈 反人类中心主义<br>
+    🎹 piano 🎻 violin 🎷 sax 🎨 art<br>
+    🌊 大海代我向云朵问好<br>
+    🌲 群山听懂我伤悲，我又岂能懂群山<br>
 
     <div class="interests"><br>
-      <strong>🐱核心关注：</strong>
+      <strong>🐱 核心关注：</strong>
       <ul>
         <li>深层生态学建设</li>
         <li>技术物件的生态重审</li>
@@ -400,119 +566,117 @@ body {
       </ul>
     </div>
 
+    <!-- Friend Intro Box -->
     <div class="friend-intro">
       <strong>👬 Friends:</strong>
       <p>发现还有两个小伙伴把我加了友链（感激涕零，遂添之。</p>
-      <p class="email-protect">📮 Contact: pikalock2024@gmail.com</p>
-      <!-- Telegram 按钮 -->
-      <a class="sidebar-button-link" 
-         href="https://t.me/pikalock_home" 
-         target="_blank" 
-         rel="noopener" 
+      <p class="email-protect">
+        📮 Contact: <span data-user="pikalock2024" data-domain="gmail.com" style="unicode-bidi:bidi-override; direction:rtl;">moc.liamg@4202kcolakip</span>
+      </p>
+      <!-- Telegram Button -->
+      <a class="sidebar-button-link"
+         href="https://t.me/pikalock_home"
+         target="_blank"
+         rel="noopener"
          title="Telegram">
-          <i class="sidebar-button-icon fab fa-telegram-plane" aria-hidden="false"></i>
+          <i class="sidebar-button-icon fab fa-telegram-plane" aria-hidden="true"></i>
           <span class="sidebar-button-desc">Telegram</span>
       </a>
-  </div>
+    </div>
+
+    <!-- Friend Links -->
     <div class="direct-links">
-      <!--- 固定友链 -->
       <article class="friend-item">
         <h3>Cyrus</h3>
         <p class="motto">Think twice, code once.</p>
         <a href="https://blog.codecyrus.com" target="_blank" rel="noopener">🌐 https://blog.codecyrus.com</a>
       </article>
-    
+
       <article class="friend-item">
         <h3>Hsad</h3>
         <p class="motto">一个人的世界</p>
         <a href="https://hsad.xyz" target="_blank" rel="noopener">🌌 https://hsad.xyz</a>
       </article>
     </div>
-  
-    <div style="text-align: center; margin: 2rem 0; font-family: '楷体', cursive; color: #4a5568; line-height: 1.8;">
-      <p style="border-left: 3px solid #4ecdc4; padding-left: 1rem;">
-        谁是谁非 谁相随<br>
-        戎马一生 为了谁<br>
-        我能爱几回恨几回<br>
-        败帝王 斗苍天<br>
-        我夺得皇位已成仙<br>
-        豪情万丈天地间<br>
-        续写另类帝王篇<br>
-      </p>
-    </div>
-  
-  
-  </div> 
-  <!-- 共生宣言 -->
-  <div class="card neuro-border" id="symbiosis">
-    <h2 style="text-align: center; margin-bottom: 2rem;">
-      <span style="font-size:1.5em;">🌱&🔧</span>
+  </section> <!-- End Profile Card -->
+
+  <!-- Symbiosis Declaration Section -->
+  <section class="card neuro-border" id="symbiosis">
+    <h2 class="text-center">
+      <span>🌱&🔧</span> <!-- Styled via CSS -->
     </h2>
-    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
-      <div class="hover-effect" style="padding: 2rem; background: rgba(255,255,255,0.6); border-radius: 1rem;">
-        <p style="font-size:1.2em; line-height:1.4;">
+    <div class="grid-container"> <!-- Added container for grid -->
+      <div class="hover-effect symbiosis-item"> <!-- Combined classes -->
+        <p>
           <strong>第四次革命不应是技术革命，应该是——技术共生的生态革命。</strong>
         </p>
-        <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(233,245,219,0.3); border-radius: 8px;">
-          <small style="color:#7f8c8d;">“世界首先是被身体丈量的存在之网，<br>其次才是被概念切割的对象集合。”</small><br><br>
-    地球46亿年的层积历史被压缩为人类纪年的切片。<br>正如地球本身只是宇宙物质暂存的形态，人类的感知也不过是碳基分子在时空中的短暂共振。
+        <div class="quote-block"> <!-- Specific class for quote block -->
+          <small>“世界首先是被身体丈量的存在之网，<br>其次才是被概念切割的对象集合。”</small><br><br>
+          地球46亿年的层积历史被压缩为人类纪年的切片。<br>正如地球本身只是宇宙物质暂存的形态，人类的感知也不过是碳基分子在时空中的短暂共振。
         </div>
       </div>
     </div>
-  </div>
+  </section> <!-- End Symbiosis Card -->
 
-
-  <!-- 书籍系统 -->
-  <div class="card" id="philosophy">
+  <!-- Books Section -->
+  <section class="card" id="philosophy">
     <h2>📚 认知动力装置 —— 2025年份</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
-      <div class="hover-effect" style="padding: 1.5rem; background: rgba(233,245,219,0.3); border-radius: 12px;">
+    <div class="book-grid"> <!-- Added container for grid -->
+      <div class="hover-effect book-list humanities"> <!-- Combined and specific classes -->
         <h3>人类历史学&哲学</h3>
         <p>《人类简史》<br>《胡塞尔现象学》<br>《我的世界观》<br>《作为意志和表象的世界》<br>《知觉现象学》<br>《自然史》 <br> 《人生的智慧》<br> 《人类行为心理学》<br> 《哲学简史》</p>
       </div>
-      <div class="hover-effect" style="padding: 1.5rem; background: rgba(210,230,255,0.3); border-radius: 12px;">
+      <div class="hover-effect book-list ecology"> <!-- Combined and specific classes -->
         <h3>深层生态学</h3>
         <p>《deep ecology》<br>《A Sand County Almanac》<br>《Environmental Phenomenology》<br>《Being and Time》</p>
       </div>
     </div>
-  </div>
+  </section> <!-- End Books Card -->
+</main> <!-- End Container -->
 
-  <!-- 动态页脚 -->
-  <div style="text-align:center; margin:4rem 0; opacity:0.8;">
-    <div class="parallax-layer" data-depth="0.4">
-      <p style="font-family: cursive;">海浪在岩石上书写现象学<br>风带走所有人类中心主义的注解<br>此刻——<br>我是群山的心跳</p>
-      <hr style="border-top:1px dashed rgba(144,202,247,0.5); margin:2rem auto; width:50%;">
-      <div style="font-size:0.9em;">
-        🌀 本页面持续进行光合作用 ☀️<br>
-        <span style="font-size:0.8em; color:#7f8c8d;">Version 2.0 | 生态感知模式激活</span>
-      </div>
-    </div>
-  </div>
-
-<script>
-// 智能视差系统
+<script defer> // Added defer attribute
+// Smart Parallax System
 document.addEventListener('DOMContentLoaded', () => {
   const layers = document.querySelectorAll('.parallax-layer');
   const parallax = (e) => {
+    const { clientX, clientY } = e; // Use clientX/Y for consistency
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
     layers.forEach(layer => {
       const depth = parseFloat(layer.dataset.depth) || 0.3;
-      const x = (window.innerWidth - e.pageX * depth) / 100;
-      const y = (window.innerHeight - e.pageY * depth) / 100;
-      layer.style.transform = `translate(${x}px, ${y}px)`;
+      // Calculate movement based on cursor position relative to center
+      const moveX = (clientX - centerX) * depth / 20; // Reduced intensity slightly
+      const moveY = (clientY - centerY) * depth / 20;
+      // Use translate3d for potential hardware acceleration
+      layer.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
     });
   }
+  // Add throttling/debouncing if performance becomes an issue on complex pages
   document.addEventListener('mousemove', parallax);
-  // 智能锚点平滑滚动
+
+  // Smart Anchor Smooth Scrolling
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const href = this.getAttribute('href');
+      try {
+        const target = document.querySelector(href);
+        if (target) { // Check if target element exists
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          console.warn(`Smooth scroll target not found for selector: ${href}`);
+        }
+      } catch (error) {
+         // Catch potential errors with invalid selectors
+         console.error(`Error finding smooth scroll target: ${error}`);
+      }
     });
   });
 });
 </script>
-
+</body>
+</html>
     </div>
 
 
