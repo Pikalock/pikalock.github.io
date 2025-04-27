@@ -127,7 +127,7 @@
         
         <div class="date" id="date">
             <span>April</span>
-            <span>23,</span>
+            <span>27,</span>
             <span>2025</span>
         </div>
         
@@ -136,13 +136,65 @@
     </div>
 
     <div class="content">
-        <style>
+        <!-- 在<head>中添加Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
 :root {
   --primary-gradient: linear-gradient(135deg, #e9f5db 0%, #c7ebe4 50%, #eef7f5 100%);
   --neuro-pattern: repeating-linear-gradient(45deg, 
     transparent, transparent 10px,
     rgba(144,202,247,0.1) 10px, rgba(144,202,247,0.1) 20px);
 }
+
+.friend-intro {
+    max-width: 400px;
+    padding: 20px;
+    background: #f8f9fa; /* 轻微灰背景 */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    text-align: center;
+}
+
+.friend-intro strong {
+    color: #0088cc; /* Telegram 蓝色 */
+    font-size: 1.2em;
+}
+
+.friend-intro p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.sidebar-button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #0088cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 15px 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-button-link:hover {
+    background: #0066a3;
+    transform: translateY(-2px);
+}
+
+.sidebar-button-icon {
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+.email-protect {
+    color: #6c757d; /* 浅灰色 */
+    margin: 10px 0;
+}
+
 /* 防爬邮箱样式 */
 .email-protect span::after {
   content: attr(data-user) "@" attr(data-domain);
@@ -348,14 +400,20 @@ body {
       </ul>
     </div>
 
-  <section class="friend-intro">
- 
-<strong>👬Friends:</strong>
+    <div class="friend-intro">
+      <strong>👬 Friends:</strong>
       <p>发现还有两个小伙伴把我加了友链（感激涕零，遂添之。</p>
-      <p>如果你对我感兴趣，请别当回事；如果你对生态哲学感兴趣，请速速过来。</p>
-      <p class="email-protect">📮 Contact: pikalock2024@gmail.com </p>
-    </section>
-    
+      <p class="email-protect">📮 Contact: pikalock2024@gmail.com</p>
+      <!-- Telegram 按钮 -->
+      <a class="sidebar-button-link" 
+         href="https://t.me/pikalock_home" 
+         target="_blank" 
+         rel="noopener" 
+         title="Telegram">
+          <i class="sidebar-button-icon fab fa-telegram-plane" aria-hidden="false"></i>
+          <span class="sidebar-button-desc">Telegram</span>
+      </a>
+  </div>
     <div class="direct-links">
       <!--- 固定友链 -->
       <article class="friend-item">
@@ -430,7 +488,7 @@ body {
       </div>
     </div>
   </div>
-</> 
+
 <script>
 // 智能视差系统
 document.addEventListener('DOMContentLoaded', () => {
