@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>Pikalock&#39;s 21st - Hexo</title>
+  
+    <link rel="shortcut icon" href="/Users/apple/Desktop/cat.jpg">
+  
+  
+    <link rel='manifest' href='/manifest.json'>
+  
+
+  
+  
+  
+  <meta property="og:title" content="Pikalock&#39;s 21st - Hexo" />
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:url" content="https://pikalock.github.io/2025/12/31/test/index.html" />
+  
+  <meta property="og:image" content="/favicon.png" />
+  
+  <meta property="og:article:published_time" content="2025-12-30T16:00:00.000Z" />
+  
+  <meta property="og:article:author" content="pikalock" />
+  
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body
+        data-color-scheme="light"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="always"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="3"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">Blog</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">Home</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item" href="/about">About</a>
+            
+            
+            
+            <a class="nav-item" href="/artgallery">Artgallery</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/pikalock" target="_blank" aria-label="GitHub">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+
+        
+        <div class="date" id="date">
+            <span>December</span>
+            <span>31,</span>
+            <span>2025</span>
+        </div>
+        
+
+        <h1 class="title">Pikalock&#39;s 21st   </h1>
+    </div>
+
+    <div class="content">
+        
+<style>
+  /* ========== RESET ========== */
+  #birthday-app *,#birthday-app *::before,#birthday-app *::after{margin:0;padding:0;box-sizing:border-box}
+  #birthday-app{
+    position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:99999;
+    background:#000;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:#f5f5f7;overflow:hidden;cursor:default;
+    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  }
+
+  /* ========== FONTS ========== */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap');
+
+  /* ========== AMBIENT BG ========== */
+  .ambient-canvas{
+    position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;opacity:.35;
+  }
+
+  /* ========== HERO ========== */
+  .hero-layer{
+    position:absolute;top:0;left:0;width:100%;height:100%;z-index:5;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    pointer-events:none;transition:opacity 1.2s cubic-bezier(.4,0,.2,1);
+  }
+  .hero-layer.dimmed{opacity:.15}
+  .hero-number{
+    font-family:'Playfair Display',serif;font-size:clamp(100px,18vw,220px);
+    font-weight:700;line-height:.85;letter-spacing:-.04em;
+    background:linear-gradient(180deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.25) 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .hero-sub{
+    font-size:clamp(10px,1.4vw,15px);font-weight:300;letter-spacing:.45em;
+    text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:12px;
+  }
+  .hero-line{
+    width:40px;height:1px;background:rgba(255,255,255,.15);margin-top:28px;
+  }
+  .hero-date{
+    font-size:11px;font-weight:300;color:rgba(255,255,255,.2);margin-top:16px;
+    letter-spacing:.15em;font-family:'Inter',sans-serif;
+  }
+  .scroll-hint{
+    position:absolute;bottom:36px;font-size:10px;letter-spacing:.3em;
+    text-transform:uppercase;color:rgba(255,255,255,.2);
+    animation:pulseHint 3s ease-in-out infinite;
+  }
+  @keyframes pulseHint{0%,100%{opacity:.2}50%{opacity:.5}}
+
+  /* ========== STREAM LAYER ========== */
+  .stream-layer{
+    position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;
+    overflow:hidden;
+  }
+
+  /* ========== CARD SYSTEM ========== */
+  .stream-card{
+    position:absolute;
+    border-radius:20px;
+    backdrop-filter:blur(40px) saturate(1.4);
+    -webkit-backdrop-filter:blur(40px) saturate(1.4);
+    background:rgba(28,28,30,.55);
+    border:1px solid rgba(255,255,255,.06);
+    box-shadow:0 8px 40px rgba(0,0,0,.3),inset 0 .5px 0 rgba(255,255,255,.08);
+    cursor:pointer;
+    transition:filter .6s cubic-bezier(.4,0,.2,1), border-color .4s ease;
+    will-change:transform;
+    overflow:hidden;
+  }
+  .stream-card:hover{
+    border-color:rgba(255,255,255,.15);
+    filter:brightness(1.08);
+  }
+
+  /* card inner padding */
+  .card-body{padding:18px 20px;}
+
+  /* ---- Type: Quote ---- */
+  .card-quote{width:280px}
+  .card-quote .quote-tag{
+    display:inline-block;font-size:9px;font-weight:500;letter-spacing:.15em;
+    text-transform:uppercase;color:rgba(255,255,255,.3);
+    border:1px solid rgba(255,255,255,.1);border-radius:100px;
+    padding:3px 10px;margin-bottom:12px;
+  }
+  .card-quote .quote-text{
+    font-family:'Noto Serif SC',serif;font-size:15px;font-weight:300;
+    line-height:1.75;color:rgba(255,255,255,.8);
+  }
+
+  /* ---- Type: Stat ---- */
+  .card-stat{width:150px;}
+  .card-stat .stat-value{
+    font-size:36px;font-weight:700;letter-spacing:-.02em;line-height:1;
+  }
+  .card-stat .stat-unit{font-size:13px;font-weight:300;opacity:.5;margin-left:2px}
+  .card-stat .stat-label{
+    font-size:10px;font-weight:400;text-transform:uppercase;letter-spacing:.12em;
+    color:rgba(255,255,255,.3);margin-top:8px;
+  }
+
+  /* ---- Type: Moment ---- */
+  .card-moment{width:200px;padding:0;overflow:hidden}
+  .card-moment .moment-visual{
+    width:100%;height:140px;position:relative;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+    font-size:56px;
+    background:linear-gradient(135deg,rgba(255,255,255,.03) 0%,rgba(255,255,255,.01) 100%);
+  }
+  .card-moment .moment-info{padding:14px 18px 16px}
+  .card-moment .moment-title{font-size:13px;font-weight:600;letter-spacing:.01em}
+  .card-moment .moment-desc{font-size:11px;font-weight:300;color:rgba(255,255,255,.35);margin-top:3px;line-height:1.4}
+
+  /* ---- Type: Tag ---- */
+  .card-tag{
+    width:auto;padding:10px 20px;border-radius:100px;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .card-tag .tag-dot{width:6px;height:6px;border-radius:50%}
+  .card-tag .tag-text{font-size:12px;font-weight:500;letter-spacing:.02em}
+
+  /* ---- Type: Track ---- */
+  .card-track{width:240px}
+  .card-track .track-header{
+    display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;
+  }
+  .card-track .track-app{font-size:9px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3)}
+  .card-track .track-time{font-size:9px;color:rgba(255,255,255,.2);font-variant-numeric:tabular-nums}
+  .card-track .track-bars{display:flex;flex-direction:column;gap:5px}
+  .card-track .track-bar{height:4px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden}
+  .card-track .track-fill{height:100%;border-radius:2px}
+  .card-track .track-name{font-size:12px;font-weight:500;margin-top:12px}
+  .card-track .track-genre{font-size:10px;color:rgba(255,255,255,.25);margin-top:2px}
+
+  /* ---- Type: Photo ---- */
+  .card-photo{width:180px;padding:0;overflow:hidden;background:#111}
+  .card-photo img{width:100%;height:200px;object-fit:cover;display:block;opacity:.85;transition:opacity .4s ease}
+  .card-photo:hover img{opacity:1}
+  .card-photo .photo-caption{padding:12px 16px}
+  .card-photo .photo-title{font-size:12px;font-weight:500}
+  .card-photo .photo-sub{font-size:10px;color:rgba(255,255,255,.3);margin-top:2px}
+
+  /* ---- Type: Book ---- */
+  .card-book{width:160px}
+  .card-book .book-emoji{font-size:32px;margin-bottom:10px}
+  .card-book .book-title{font-size:13px;font-weight:600;line-height:1.3}
+  .card-book .book-author{font-size:10px;color:rgba(255,255,255,.3);margin-top:4px}
+  .card-book .book-note{font-size:10px;color:rgba(255,255,255,.2);margin-top:8px;line-height:1.4;font-style:italic}
+
+  /* ========== FOCUS OVERLAY ========== */
+  .focus-overlay{
+    position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;
+    background:rgba(0,0,0,.75);backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;
+    transition:opacity .5s cubic-bezier(.4,0,.2,1);
+  }
+  .focus-overlay.active{opacity:1;pointer-events:auto}
+  .focus-card-wrap{
+    transform:scale(.9) translateY(20px);
+    transition:transform .5s cubic-bezier(.2,.8,.2,1);
+  }
+  .focus-overlay.active .focus-card-wrap{transform:scale(1) translateY(0)}
+  .focus-card-clone{
+    border-radius:24px;
+    background:rgba(28,28,30,.8);
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:0 24px 80px rgba(0,0,0,.5);
+    backdrop-filter:blur(60px);-webkit-backdrop-filter:blur(60px);
+    overflow:hidden;
+    max-width:90vw;max-height:80vh;
+  }
+  .focus-card-clone .card-body{padding:28px 32px}
+  .focus-card-clone .quote-text{font-size:22px !important}
+  .focus-card-clone .stat-value{font-size:54px !important}
+  .focus-card-clone .moment-visual{height:200px !important;font-size:80px !important}
+  .focus-card-clone .track-name{font-size:16px !important}
+  .focus-card-clone .book-title{font-size:18px !important}
+  .focus-card-clone .book-note{font-size:13px !important}
+  .focus-card-clone img{height:280px !important}
+
+  .focus-hint{
+    position:absolute;bottom:40px;font-size:10px;letter-spacing:.2em;
+    text-transform:uppercase;color:rgba(255,255,255,.25);
+  }
+
+  /* ========== BOTTOM NAV ========== */
+  .bottom-nav{
+    position:absolute;bottom:0;left:0;width:100%;z-index:50;
+    display:flex;justify-content:center;gap:6px;padding:20px;
+    pointer-events:none;
+  }
+  .nav-pill{
+    pointer-events:auto;
+    padding:6px 16px;border-radius:100px;font-size:10px;font-weight:500;
+    letter-spacing:.08em;text-transform:uppercase;cursor:pointer;
+    background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);
+    color:rgba(255,255,255,.3);
+    transition:all .3s ease;user-select:none;
+  }
+  .nav-pill:hover,.nav-pill.active{
+    background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);
+    border-color:rgba(255,255,255,.15);
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media(max-width:768px){
+    .hero-number{font-size:clamp(80px,25vw,140px)}
+    .card-quote{width:220px}
+    .card-quote .quote-text{font-size:13px}
+    .card-track{width:200px}
+    .card-moment{width:160px}
+    .card-moment .moment-visual{height:100px;font-size:40px}
+    .card-photo{width:150px}
+    .card-photo img{height:160px}
+    .bottom-nav{gap:4px;padding:14px 10px}
+    .nav-pill{font-size:9px;padding:5px 12px}
+  }
+</style>
+
+<div id="birthday-app">
+  <!-- Ambient BG -->
+  <canvas class="ambient-canvas" id="ambientCanvas"></canvas>
+
+  <!-- Hero -->
+  <div class="hero-layer" id="heroLayer">
+    <div class="hero-number">21</div>
+    <div class="hero-sub">The Year of Resonance</div>
+    <div class="hero-line"></div>
+    <div class="hero-date">July 12 · Two Thousand Twenty-Five</div>
+    <div class="scroll-hint">Click any card to explore</div>
+  </div>
+
+  <!-- Stream -->
+  <div class="stream-layer" id="streamLayer"></div>
+
+  <!-- Focus Overlay -->
+  <div class="focus-overlay" id="focusOverlay">
+    <div class="focus-card-wrap">
+      <div class="focus-card-clone" id="focusClone"></div>
+    </div>
+    <div class="focus-hint">Click anywhere to close</div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav" id="bottomNav">
+    <div class="nav-pill active" data-filter="all">All</div>
+    <div class="nav-pill" data-filter="soul">Soul</div>
+    <div class="nav-pill" data-filter="move">Move</div>
+    <div class="nav-pill" data-filter="create">Create</div>
+    <div class="nav-pill" data-filter="life">Life</div>
+    <div class="nav-pill" data-filter="read">Read</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ============ UTILS ============ */
+  const R=(a,b)=>Math.random()*(b-a)+a;
+  const RI=(a,b)=>Math.floor(R(a,b));
+  const lerp=(a,b,t)=>a+(b-a)*t;
+
+  /* ============ AMBIENT CANVAS ============ */
+  const cvs=document.getElementById('ambientCanvas');
+  const ctx=cvs.getContext('2d');
+  let W,H;
+  function resizeCvs(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight}
+  resizeCvs();window.addEventListener('resize',resizeCvs);
+
+  const orbs=[
+    {x:.2,y:.3,r:300,h:220,s:60,l:25,vx:.0002,vy:.0003},
+    {x:.7,y:.6,r:350,h:280,s:50,l:20,vx:-.0003,vy:.0002},
+    {x:.5,y:.8,r:280,h:200,s:40,l:18,vx:.0001,vy:-.0002},
+  ];
+  function drawAmbient(t){
+    ctx.clearRect(0,0,W,H);
+    orbs.forEach(o=>{
+      o.x+=o.vx;o.y+=o.vy;
+      if(o.x<-.1||o.x>1.1)o.vx*=-1;
+      if(o.y<-.1||o.y>1.1)o.vy*=-1;
+      const g=ctx.createRadialGradient(o.x*W,o.y*H,0,o.x*W,o.y*H,o.r);
+      g.addColorStop(0,`hsla(${o.h},${o.s}%,${o.l}%,.3)`);
+      g.addColorStop(1,`hsla(${o.h},${o.s}%,${o.l}%,0)`);
+      ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    });
+    requestAnimationFrame(drawAmbient);
+  }
+  drawAmbient(0);
+
+  /* ============ DATA ============ */
+  const CARDS=[
+    // --- QUOTES (soul) ---
+    {cat:'soul',type:'quote',tag:'On the Road',text:'在路上，感受到生命的共振。风穿过身体的时刻，我知道自己是活着的。'},
+    {cat:'soul',type:'quote',tag:'Hiking',text:'身体在爬山，灵魂在修禅。每一步都在与地心引力对话。'},
+    {cat:'soul',type:'quote',tag:'Gardening',text:'种下的每一棵菜，都在教我等待的艺术。生长无法催促。'},
+    {cat:'soul',type:'quote',tag:'Growth',text:'家教赚到的不仅是钱，更是独立的底气。第一次觉得，我可以。'},
+    {cat:'soul',type:'quote',tag:'Music',text:'编曲的时候，时间是我的。每一个音符都是一次微小的决定。'},
+    {cat:'soul',type:'quote',tag:'Reading',text:'看书，是为了在人群中保持清醒。在孤独中找到力量。'},
+    {cat:'soul',type:'quote',tag:'Life',text:'吃了很多，爱了很多，活了很多。二十一岁的胃和心，都很满。'},
+    {cat:'soul',type:'quote',tag:'Friends',text:'结交新朋友，是在阅读不同的宇宙。每个人都是一本打开的书。'},
+    {cat:'soul',type:'quote',tag:'Camping',text:'帐篷外是星河，帐篷内是心安。原来安全感可以这么轻。'},
+    {cat:'soul',type:'quote',tag:'Tea',text:'采茶的清晨，指尖沾着露水和香气。简单的事情做到极致，就是禅。'},
+    {cat:'soul',type:'quote',tag:'Cycling',text:'骑行八十公里后，世界变得很安静。累到极致，反而听见了自己。'},
+    {cat:'soul',type:'quote',tag:'Twenty-One',text:'二十一岁，不急着定义自己。慢慢来，比较快。'},
+
+    // --- STATS (move) ---
+    {cat:'move',type:'stat',value:'80',unit:'km',label:'Longest Ride',color:'#a4ff00'},
+    {cat:'move',type:'stat',value:'2050',unit:'m',label:'Peak Elevation',color:'#30d158'},
+    {cat:'move',type:'stat',value:'15k',unit:'',label:'Avg Steps / Day',color:'#0a84ff'},
+    {cat:'move',type:'stat',value:'42',unit:'days',label:'Outdoor Adventures',color:'#ff9f0a'},
+    {cat:'move',type:'stat',value:'12',unit:'trails',label:'Mountains Conquered',color:'#bf5af2'},
+    {cat:'move',type:'stat',value:'6',unit:'camps',label:'Nights Under Stars',color:'#64d2ff'},
+    {cat:'move',type:'stat',value:'180',unit:'hrs',label:'Total Workout',color:'#ff375f'},
+
+    // --- MOMENTS (life) ---
+    {cat:'life',type:'moment',emoji:'🏕️',title:'Camping',desc:'篝火、星空与远方的风'},
+    {cat:'life',type:'moment',emoji:'🦆',title:'My Duck',desc:'一只会跟着我走的小家伙'},
+    {cat:'life',type:'moment',emoji:'🌱',title:'Vegetable Garden',desc:'从播种到收获的 120 天'},
+    {cat:'life',type:'moment',emoji:'🍵',title:'Tea Picking',desc:'清晨山间，指尖带着茶香'},
+    {cat:'life',type:'moment',emoji:'🍜',title:'Local Delicacies',desc:'走过的城市，吃过的味道'},
+    {cat:'life',type:'moment',emoji:'🍻',title:'New Friends',desc:'干杯，敬我们偶然的相遇'},
+    {cat:'life',type:'moment',emoji:'🌄',title:'Sunrise at Summit',desc:'凌晨四点出发，只为那一刻'},
+    {cat:'life',type:'moment',emoji:'🚲',title:'First Century Ride',desc:'80 公里，重新认识了风'},
+    {cat:'life',type:'moment',emoji:'🎹',title:'Late Night Sessions',desc:'凌晨的旋律，只有月亮在听'},
+    {cat:'life',type:'moment',emoji:'🏠',title:'Independent Living',desc:'学会和自己好好相处'},
+
+    // --- TRACKS (create) ---
+    {cat:'create',type:'track',app:'Logic Pro',time:'03:42',name:'Summer Resonance',genre:'Electronic / Ambient',bars:[{w:75,c:'#ff2d55'},{w:90,c:'#0a84ff'},{w:55,c:'#ffd60a'},{w:40,c:'#30d158'}]},
+    {cat:'create',type:'track',app:'Logic Pro',time:'02:18',name:'Rainy Day Loop',genre:'Lo-Fi / Chill',bars:[{w:60,c:'#5e5ce6'},{w:85,c:'#64d2ff'},{w:45,c:'#ff9f0a'}]},
+    {cat:'create',type:'track',app:'GarageBand',time:'04:05',name:'Mountain Echo',genre:'Post-Rock',bars:[{w:80,c:'#30d158'},{w:65,c:'#bf5af2'},{w:90,c:'#ff375f'},{w:50,c:'#ffd60a'}]},
+
+    // --- TAGS (create / life) ---
+    {cat:'create',type:'tag',dot:'#ff2d55',text:'Music Producer'},
+    {cat:'create',type:'tag',dot:'#0a84ff',text:'Web Developer'},
+    {cat:'create',type:'tag',dot:'#ffd60a',text:'Private Tutor'},
+    {cat:'life',type:'tag',dot:'#30d158',text:'Plant Parent'},
+    {cat:'life',type:'tag',dot:'#ff9f0a',text:'Duck Owner'},
+    {cat:'move',type:'tag',dot:'#a4ff00',text:'Cyclist'},
+    {cat:'move',type:'tag',dot:'#bf5af2',text:'Trail Hiker'},
+    {cat:'move',type:'tag',dot:'#64d2ff',text:'Gym Goer'},
+
+    // --- BOOKS (read) ---
+    {cat:'read',type:'book',emoji:'📖',title:'月亮与六便士',author:'毛姆',note:'满地都是六便士，他却抬头看见了月亮'},
+    {cat:'read',type:'book',emoji:'📚',title:'百年孤独',author:'马尔克斯',note:'时间不是直线，是一个圆'},
+    {cat:'read',type:'book',emoji:'📕',title:'瓦尔登湖',author:'梭罗',note:'我步入丛林，因为我希望生活得有意义'},
+    {cat:'read',type:'book',emoji:'📗',title:'小王子',author:'圣埃克苏佩里',note:'所有的大人都曾经是小孩'},
+    {cat:'read',type:'book',emoji:'📘',title:'挪威的森林',author:'村上春树',note:'死并非生的对立面，而是作为生的一部分永存'},
+    {cat:'read',type:'book',emoji:'📙',title:'人间失格',author:'太宰治',note:'生而为人，我很抱歉'},
+
+    // --- PHOTOS (life / move) ---
+    {cat:'life',type:'photo',src:'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&q=80',title:'Camp Night',sub:'星空下的帐篷'},
+    {cat:'move',type:'photo',src:'https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=80',title:'Trekking',sub:'云端之上的小路'},
+    {cat:'life',type:'photo',src:'https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?w=400&q=80',title:'Tea Fields',sub:'春天的味道'},
+    {cat:'move',type:'photo',src:'https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=400&q=80',title:'Cycling',sub:'风和自由的代名词'},
+    {cat:'life',type:'photo',src:'https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=400&q=80',title:'Garden',sub:'阳台上的小宇宙'},
+  ];
+
+  /* ============ RENDER HTML ============ */
+  function cardHTML(d){
+    switch(d.type){
+      case 'quote': return `<div class="card-body"><div class="quote-tag">${d.tag}</div><div class="quote-text">${d.text}</div></div>`;
+      case 'stat': return `<div class="card-body"><div class="stat-value" style="color:${d.color}">${d.value}<span class="stat-unit">${d.unit}</span></div><div class="stat-label">${d.label}</div></div>`;
+      case 'moment': return `<div class="moment-visual">${d.emoji}</div><div class="moment-info"><div class="moment-title">${d.title}</div><div class="moment-desc">${d.desc}</div></div>`;
+      case 'track': return `<div class="card-body"><div class="track-header"><span class="track-app">${d.app}</span><span class="track-time">${d.time}</span></div><div class="track-bars">${d.bars.map(b=>`<div class="track-bar"><div class="track-fill" style="width:${b.w}%;background:${b.c}"></div></div>`).join('')}</div><div class="track-name">${d.name}</div><div class="track-genre">${d.genre}</div></div>`;
+      case 'tag': return `<div class="tag-dot" style="background:${d.dot}"></div><div class="tag-text">${d.text}</div>`;
+      case 'book': return `<div class="card-body"><div class="book-emoji">${d.emoji}</div><div class="book-title">${d.title}</div><div class="book-author">${d.author}</div><div class="book-note">${d.note}</div></div>`;
+      case 'photo': return `<img src="${d.src}" loading="lazy" alt="${d.title}"><div class="photo-caption"><div class="photo-title">${d.title}</div><div class="photo-sub">${d.sub}</div></div>`;
+    }
+  }
+
+  /* ============ STREAM ENGINE ============ */
+  const streamLayer=document.getElementById('streamLayer');
+  const heroLayer=document.getElementById('heroLayer');
+  const focusOverlay=document.getElementById('focusOverlay');
+  const focusClone=document.getElementById('focusClone');
+
+  let currentFilter='all';
+  let liveCards=[];
+  let focusOpen=false;
+  let mouseX=0,mouseY=0;
+  let cardIdCounter=0;
+
+  /* Column layout for orderly, balanced distribution */
+  const COLS=5;
+  function getColX(col){
+    const margin=0.04;
+    const usable=1-margin*2;
+    const colW=usable/COLS;
+    return margin+colW*col+colW*0.5;
+  }
+
+  /* Pool: shuffled queue per column */
+  let pools=[];
+  function buildPools(){
+    pools=[];
+    const filtered=CARDS.filter(c=>currentFilter==='all'||c.cat===currentFilter);
+    for(let i=0;i<COLS;i++){
+      const p=[...filtered];
+      /* shuffle */
+      for(let j=p.length-1;j>0;j--){const k=RI(0,j+1);[p[j],p[k]]=[p[k],p[j]];}
+      pools.push({items:p,idx:0});
+    }
+  }
+  function nextFromPool(col){
+    const p=pools[col];
+    if(!p||p.items.length===0) return CARDS[RI(0,CARDS.length)];
+    const item=p.items[p.idx % p.items.length];
+    p.idx++;
+    return item;
+  }
+
+  /* Spawn a card in given column */
+  function spawnCard(col,immediate){
+    const data=nextFromPool(col);
+    const el=document.createElement('div');
+    const typeClass='card-'+data.type;
+    el.className=`stream-card ${typeClass}`;
+    el.setAttribute('data-cat',data.cat);
+    el.innerHTML=cardHTML(data);
+
+    /* position */
+    const xCenter=getColX(col);
+    const xJitter=R(-.03,.03);
+    const x=(xCenter+xJitter)*100;
+    el.style.left=x+'%';
+    el.style.transform='translateX(-50%)';
+
+    /* depth layers: 0=far 1=near */
+    const depth=R(0,1);
+    const scale=.7+depth*.35;
+    const speed=28+((1-depth)*30); /* 28-58s */
+    const startY=immediate?R(0,100):105;
+
+    const id=cardIdCounter++;
+    const card={id,el,col,data,depth,scale,speed,y:startY,x,alive:true};
+    liveCards.push(card);
+    streamLayer.appendChild(el);
+
+    /* click to focus */
+    el.addEventListener('click',e=>{
+      e.stopPropagation();
+      openFocus(data,el);
+    });
+
+    return card;
+  }
+
+  /* ============ ANIMATION LOOP ============ */
+  let lastT=0;
+  function tick(t){
+    if(!lastT)lastT=t;
+    const dt=Math.min((t-lastT)/1000,0.1);
+    lastT=t;
+
+    /* parallax from mouse */
+    const mx=(mouseX/W-0.5);
+    const my=(mouseY/H-0.5);
+
+    liveCards.forEach(c=>{
+      if(!c.alive)return;
+      /* move up */
+      const pxPerSec=H/c.speed;
+      c.y-=pxPerSec*dt/H*100;
+
+      /* parallax */
+      const px=mx*c.depth*25;
+      const py=my*c.depth*15;
+
+      c.el.style.transform=`translateX(-50%) translate(${px}px,${py}px) scale(${c.scale})`;
+      c.el.style.top=c.y+'%';
+      c.el.style.opacity=c.depth*.5+.45;
+
+      /* remove if off screen */
+      if(c.y<-20){
+        c.alive=false;
+        c.el.remove();
+      }
+    });
+
+    /* clean dead */
+    liveCards=liveCards.filter(c=>c.alive);
+
+    /* ensure each column has enough cards */
+    for(let col=0;col<COLS;col++){
+      const colCards=liveCards.filter(c=>c.col===col);
+      if(colCards.length<3){
+        spawnCard(col,false);
+      }
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  /* ============ FOCUS MODE ============ */
+  function openFocus(data,srcEl){
+    if(focusOpen)return;
+    focusOpen=true;
+    heroLayer.classList.add('dimmed');
+    focusClone.className='focus-card-clone card-'+data.type;
+    focusClone.innerHTML=cardHTML(data);
+    focusOverlay.classList.add('active');
+  }
+  function closeFocus(){
+    if(!focusOpen)return;
+    focusOpen=false;
+    focusOverlay.classList.remove('active');
+    heroLayer.classList.remove('dimmed');
+  }
+  focusOverlay.addEventListener('click',closeFocus);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeFocus()});
+
+  /* ============ FILTER NAV ============ */
+  document.querySelectorAll('.nav-pill').forEach(pill=>{
+    pill.addEventListener('click',()=>{
+      document.querySelectorAll('.nav-pill').forEach(p=>p.classList.remove('active'));
+      pill.classList.add('active');
+      currentFilter=pill.getAttribute('data-filter');
+
+      /* rebuild */
+      buildPools();
+      /* fade out old cards quickly */
+      liveCards.forEach(c=>{
+        c.el.style.transition='opacity .5s ease';
+        c.el.style.opacity='0';
+        setTimeout(()=>{c.alive=false;c.el.remove()},500);
+      });
+      liveCards=[];
+      /* spawn new set */
+      setTimeout(()=>{
+        for(let col=0;col<COLS;col++){
+          for(let i=0;i<3;i++) spawnCard(col,true);
+        }
+      },300);
+    });
+  });
+
+  /* ============ MOUSE TRACK ============ */
+  document.addEventListener('mousemove',e=>{mouseX=e.clientX;mouseY=e.clientY});
+  /* Touch */
+  document.addEventListener('touchmove',e=>{
+    if(e.touches.length){mouseX=e.touches[0].clientX;mouseY=e.touches[0].clientY}
+  },{passive:true});
+
+  /* ============ INIT ============ */
+  buildPools();
+  for(let col=0;col<COLS;col++){
+    for(let i=0;i<3;i++) spawnCard(col,true);
+  }
+  requestAnimationFrame(tick);
+
+})();
+</script>
+
+    </div>
+
+
+    <div class="container post-prev-next">
+        
+        <a href="/2026/03/31/%E6%9C%A8%E5%B7%B2%E6%B9%BF/" class="next">
+            <div>
+                <div class="text">
+                    <p class="label">Next</p>
+                    <h3 class="title">木已湿</h3>
+                </div>
+            </div>
+        </a>
+        
+        
+        <a href="/2025/11/11/%E8%BF%9C%E5%B1%B1%E7%9A%84%E5%B0%91%E5%B9%B4%E5%BF%83%E6%97%A0%E7%96%86/" class="prev">
+            <div>
+                <div class="text">
+                    <p class="label">Previous</p>
+                    <h3 class="title">远山的少年心无疆</>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+        </div>
+        <span></span>
+              
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>
