@@ -6,7 +6,7 @@
   <link href="https://pikalock.github.io/atom.xml" rel="self"/>
   
   <link href="https://pikalock.github.io/"/>
-  <updated>2026-03-31T12:31:14.548Z</updated>
+  <updated>2026-03-31T12:36:32.620Z</updated>
   <id>https://pikalock.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>木已湿</title>
     <link href="https://pikalock.github.io/2026/03/31/%E6%9C%A8%E5%B7%B2%E6%B9%BF/"/>
     <id>https://pikalock.github.io/2026/03/31/%E6%9C%A8%E5%B7%B2%E6%B9%BF/</id>
-    <published>2026-03-31T12:22:18.000Z</published>
-    <updated>2026-03-31T12:31:14.548Z</updated>
+    <published>2026-03-31T12:23:18.000Z</published>
+    <updated>2026-03-31T12:36:32.620Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>又一年春，提笔却已廖无言。</p></blockquote><p>初辞<br>芦湾浅水泊孤舟，朽木单薄不知愁。<br>偏羡云边飞鸟尽，欲凭短楫向沧洲。</p><p>夜泊<br>身似不系舟，随波任去留。<br>寒星垂大野，冷月照孤洲。<br>宿鸟惊残梦，芦花暗客愁。<br>明朝何处去，江海一轻鸥。</p>]]></content>
     
@@ -492,9 +492,9 @@
     
     <category term="pikalock" scheme="https://pikalock.github.io/tags/pikalock/"/>
     
-    <category term="love" scheme="https://pikalock.github.io/tags/love/"/>
-    
     <category term="Non-anthropocentrism" scheme="https://pikalock.github.io/tags/Non-anthropocentrism/"/>
+    
+    <category term="love" scheme="https://pikalock.github.io/tags/love/"/>
     
   </entry>
   
